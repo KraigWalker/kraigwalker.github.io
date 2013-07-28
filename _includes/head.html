@@ -14,9 +14,37 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
+<meta itemscope itemtype="http://schema.org/Person">
+
+  <meta itemprop="name">Kraig Walker</meta>
+  <img src="kraigwalker.jpg" itemprop="image" />
+  <meta itemprop="gender">Male</meta>
+  <meta itemprop="birthDate">
+    <meta itemprop="date" datetime="1992-08-31">31/08/1992</meta>
+  </meta>
+
+  <meta itemprop="jobTitle">Developer Wiz</meta>
+  <meta itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <meta itemprop="addressLocality">Prestwick</meta>
+  <meta itemprop="addressRegion">South Ayrshire</meta>
+    <meta itemprop="addressCountry">Scotland</meta>
+    <meta itemprop="telephone">(+44)01292 471238</meta>
+
+
+
+
+  Kraig's home page:
+  <a href="http://www.kraigwalker.com" itemprop="url">kraigwalker.com</a>
+
+  <a href="mailto:kraig_walker@me.com" itemprop="email">kraig_walker@me.com</a>
+</meta>
+
 <!-- Webmaster Tools verfication -->
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+<!-- Google Authorship -->
+<link rel="author" href="https://www.plus.google.com/104694977517220407329" />
 
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}">
