@@ -1,5 +1,5 @@
 title:            Kraig Walker
-description:      Describe your website here.
+description:      Design And Code Converge
 logo:             site-logo.png
 disqus_shortname:
 #Comment out url when working locally to resolve base urls correctly
@@ -8,7 +8,7 @@ disqus_shortname:
 # Owner/author information
 owner:
   name:           Kraig Walker
-  avatar:         bio-photo.jpg
+  avatar:         https://si0.twimg.com/profile_images/3490181139/04197ce2bab4c0e0a5f056108b2b239a.jpeg
   email:          kraig_walker@me.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        Kraig_Walker
