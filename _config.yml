@@ -3,7 +3,7 @@ description:      Describe your website here.
 logo:             site-logo.png
 disqus_shortname:
 #Comment out url when working locally to resolve base urls correctly
-url:              http://kraigwalker.github.io
+url:              kraigwalker.com
 
 # Owner/author information
 owner:
