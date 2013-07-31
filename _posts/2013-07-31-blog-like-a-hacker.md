@@ -3,7 +3,7 @@ layout: post
 title: "Blog Like A Hacker"
 description: "Distilling the writing process to the bare essentials"
 category: articles
-tags: [sample post, readability, test, intro]
+tags: [blog, jekyll, ruby, html, design, status, github]
 image:
   feature: typewriter.jpg
 comments: true
