@@ -8,7 +8,7 @@ url:
 # Owner/author information
 owner:
   name:           Kraig Walker
-  avatar:         kraigwalker.jpg
+  avatar:         kraig_walker.jpg
   email:          kraig_walker@me.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        Kraig_Walker
@@ -52,14 +52,10 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
-
+  use_coderay: true
   coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
     coderay_css: class
+    coderay_line_numbers: ''
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
