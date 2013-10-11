@@ -2,6 +2,5 @@ css_source: 'assets/css/'
 files: [
   'assets/css/animate.css',
   'assets/css/main.css',
-  'assets/css/fonts.css'
 ]
 css_destination: 'assets/css/'
