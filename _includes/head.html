@@ -9,12 +9,16 @@
 <meta name="twitter:creator" content="@{{ site.owner.twitter }}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image:src" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">{% endif %}
+
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.content | replace:'more start -->','' | replace:'<!-- more end','' | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="fb:admins" content="1257181099" />
 
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ site.url }}/assets/css/animate.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/fonts.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/main.min.css">
 
