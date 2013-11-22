@@ -7,6 +7,7 @@ tags: [blog, unity, camera, c#, isometric, tutorial, orthographic]
 image:
   feature: newyork_isometric.jpg
 comments: true
+primary: "Unity"
 ---
 
 In addition to rendering a typical three-dimensional perspective, Unity also allows Cameras to use Orthographic projection instead, making it a fairly simple process to create your own isometric camera.
