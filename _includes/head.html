@@ -1,8 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="expires" content="604800" />
-<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+<title>{% if page.title %}{{ page.title }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 {% if site.owner.twitter %}<!-- Twitter Card and Open Graph tags -->
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% endif %}">
 <meta name="twitter:site:id" content="14597666">
