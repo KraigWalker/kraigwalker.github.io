@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating an Isometric Camera in Unity"
-description: "It's easier than you'd think..."
+description: "Setting up orthographic projection in combination with camera rotation angles to create a functional isometric perspective with keyboard controls in Unity"
 category: articles
 tags: [blog, unity, camera, c#, isometric, tutorial, orthographic]
 image:
