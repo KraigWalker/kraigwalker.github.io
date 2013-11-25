@@ -15,7 +15,7 @@
     <div class="entry-wrapper">
       <header class="entry-header">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}" rel="tag"><i>{{ tag }}</i></a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
-        <h1 class="entry-title" itemprop="headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 id="title" class="entry-title" itemprop="headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       </header>
       <footer class="entry-meta">
         <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
@@ -33,6 +33,17 @@
       </footer>
       <div class="entry-content">
         {{ content }}
+        <!-- Place the tag where you want the button to render -->
+      <button
+        class="g-interactivepost"
+        data-contenturl="{{ site.url }}{{ page.url }}/#title"
+        data-clientid="1079844583394.apps.googleusercontent.com"
+        data-cookiepolicy="single_host_origin"
+        data-prefilltext={% if post.description %}"{{ page.description }}"{% else %}"{{ site.description }}"{% endif %}
+        data-calltoactionlabel="READ"
+        data-calltoactionurl="{{ site.url }}{{ page.url }}">
+        Share on Google+
+      </button>
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
