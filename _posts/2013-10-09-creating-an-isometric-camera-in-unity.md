@@ -42,7 +42,7 @@ To add a bit of interactivity we're going to need to write a `CameraController` 
 
 Highlight your Assets folder in the Project pane like so. Click the **Create** dropdown and create a new C# script. This will create a barebones `MonoBehaviour` for you.
 
-![]({{ site.url }}/images/project_tab.jpg)
+![Create a C# Script in the Assets Folder]({{ site.url }}/images/project_tab.jpg)
 
 Rename the script to call it **CameraController.cs** and open it up in your favourite text editor.
 

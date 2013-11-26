@@ -16,6 +16,7 @@
       <header class="entry-header">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}" rel="tag"><i>{{ tag }}</i></a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
         <h1 id="title" class="entry-title" itemprop="headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+        <p class="entry-description" itemprop="description">{{ page.description }}</p>
       </header>
       <footer class="entry-meta">
         <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
@@ -47,28 +48,28 @@
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: url('../../images/branding/btn_icons_sprite.png') transparent 0 -40px no-repeat;
+    background: url('{{ site.url }}/images/gplus_btn_icons_sprite.png') transparent 0 -40px no-repeat;
   }
   #myBtn.g-interactivepost:hover {
     background-color: #cc3732;
     color: #fff;
-    border: #dd4b39;
+    border: 1px solid #dd4b39;
   }
   #myBtn.g-interactivepost:hover .icon {
-    background: url('../../images/branding/btn_icons_sprite.png') transparent 0 0px no-repeat;
+    background: url('{{ site.url }}/images/gplus_btn_icons_sprite.png') transparent 0 0px no-repeat;
   }
 </style>
-      <button id="myBtn"
+      <span id="myBtn"
         class="g-interactivepost"
         data-contenturl="http://kraigwalker.com{{ page.url }}/#title"
         data-clientid="1079844583394-07nulvr6k1a3dd88k9lovf0qobkeukp8.apps.googleusercontent.com"
         data-cookiepolicy="http://kraigwalker.com"
-        data-prefilltext={% if post.description %}"{{ page.description }}"{% else %}"{{ site.description }}"{% endif %}
+        data-prefilltext={% if page.description %}"{{ page.description }}"{% else %}"{{ site.description }}"{% endif %}
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com{{ page.url }}">
           <span class="icon">&nbsp;</span>
-        <span class="label">Share on Google+</span>
-      </button>
+        <span class="label">Share</span>
+      </span>
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
