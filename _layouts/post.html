@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include head.html %}
-<body id="post" itemscope itemtype="http://schema.org/WebPage">
+<body id="post">
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 
@@ -14,7 +14,7 @@
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}">{% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}" rel="tag"><i>{{ tag }}</i></a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
+        <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="{ tag }}" rel="tag"><i>{{ tag }}</i></a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</span>
         <h1 id="title" class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
         <p class="entry-description" >{{ page.description }}</p>
       </header>
