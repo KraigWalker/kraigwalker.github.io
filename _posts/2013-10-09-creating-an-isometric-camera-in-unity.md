@@ -6,6 +6,7 @@ category: articles
 tags: [blog, unity, camera, c#, isometric, tutorial, orthographic]
 image:
   feature: newyork_isometric.jpg
+  thumbnail: newyork_isometric_150.jpg
 comments: true
 primary: "Unity"
 ---
