@@ -34,6 +34,7 @@
       </footer>
       <div class="entry-content">
         {{ content }}
+        {% if page.image.thumbnail%}<img class="entry-thumbnail-image" itemprop="image" src="{{ site.url }}/images/{{ page.image.thumbnail }}" alt="{{ page.title }}"></img>{% endif %}
         <!-- Place the tag where you want the button to render -->
         <style type="text/css">
   #myBtn.g-interactivepost {
