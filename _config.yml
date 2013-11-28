@@ -26,6 +26,7 @@ google_analytics: UA-19175832-1
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify: 52B2C4BFDAB8A150CB001541CA925A62
+fb_app_id:
 
 # Links to include in top navigation
 # For external links add external: true
