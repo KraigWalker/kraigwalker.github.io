@@ -37,8 +37,8 @@
 <meta property="og:article:tag" content="" />
 {% endif %}
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
-<meta property="og:url" content="{{ canonical }}/">
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}/{% endcapture %}
+<meta property="og:url" content="{{ canonical }}">
 {% if page.image.feature %}<meta property="og:image" content="http://kraigwalker.com/images/{{ page.image.feature }}" />{% endif %}
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="fb:admins" content="1257181099" />
