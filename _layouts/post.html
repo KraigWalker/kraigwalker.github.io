@@ -8,15 +8,6 @@
 <body id="post" itemscope itemtype="http://schema.org/WebPage">
 {% include browser-upgrade.html %}
 {% include navigation.html %}
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=244539232310841";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/">
   <article class="hentry" itemscope itemtype="http://schema.org/Article">
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}"class="entry-feature-image" alt="{{ page.title }}">{% endif %}
@@ -54,9 +45,17 @@
           <span class="icon">&nbsp;</span>
           <span class="label">Share</span>
       </button>
-      <!-- Place this tag where you want the +1 button to render. -->
-      <div class="g-plusone" data-href="http://kraigwalker.com{{ page.url }}"></div>
-      <div class="fb-like" data-href="http://kraigwalker.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_google_plusone" g:plusone:size="large"></a>
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_linkedin_counter"></a>
+      </div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52977ea063fd6fff"></script>
+<!-- AddThis Button END -->
+
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
