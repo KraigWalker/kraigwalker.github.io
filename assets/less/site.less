@@ -65,3 +65,35 @@
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
 	.transition(all .2s ease);
 }
+
+// Social Media Buttons
+// ---------------------------------------------------
+
+  #myBtn.g-interactivepost {
+    font-family: Arial;
+    padding: 5px;
+    color: #737373;
+    font-size: 12px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+  }
+  #myBtn.g-interactivepost .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('{{ site.url }}/images/gplus_btn_icons_sprite.png') transparent 0 -40px no-repeat;
+  }
+  #myBtn.g-interactivepost:hover {
+    background-color: #cc3732;
+    color: #fff;
+    border: 1px solid #dd4b39;
+  }
+  #myBtn.g-interactivepost:hover .icon {
+    background: url('{{ site.url }}/images/gplus_btn_icons_sprite.png') transparent 0 0px no-repeat;
+  }
+  #myBtn.g-interactivepost .label {
+    padding-top: 3px;
+  }
