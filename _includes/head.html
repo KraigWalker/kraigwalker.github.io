@@ -32,9 +32,9 @@
 {%if page.published %}
 <meta property="og:article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ page.date | date: "%B %d, %Y" }}{% endif %}" />
 {% endif %}
-<meta property="og:article:author" content="1257181099" />
-<meta property="og:article:section" content="" />
-<meta property="og:article:tag" content="" />
+<meta property="article:author" content="1257181099" />
+<meta property="article:section" content="" />
+<meta property="article:tag" content="" />
 {% endif %}
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}/{% endcapture %}
