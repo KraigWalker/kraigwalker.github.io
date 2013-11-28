@@ -7,6 +7,8 @@ tags: [github, issues, pimpmyissue]
 image:
   feature: pimpmyride.jpg
 comments: true
+primary: "Github"
+last_modified: 2013-09-21
 ---
 
 One of the things I’ve seen more and more when working with other developers is a sprawling variation in the organizational and presentational structure of Issue tags in projects. Issue tags are one of those little procrasta-tools in [Github Issues](https://github.com/blog/831-issues-2-0-the-next-generation) which you could play with for hours, creating your own labeling system, setting out a colour system that’s just right, before any actual work has even been done.
