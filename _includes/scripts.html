@@ -2,55 +2,18 @@
 <script async src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script async src="{{ site.url }}/assets/js/main.min.js"></script>
-<script>
-(function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.href = '{{ site.url }}/assets/css/main.min.css';
-    g.rel = 'stylesheet'
-    s.parentNode.insertBefore(g, s);
-}(document, 'link'));
-</script>
-<script>
-(function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.href = '{{ site.url }}/assets/css/fonts.css';
-    g.rel = 'stylesheet'
-    s.parentNode.insertBefore(g, s);
-}(document, 'link'));
-</script>
+<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = '{{ site.url }}/assets/css/main.min.css';g.rel = 'stylesheet';s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
+<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = '{{ site.url }}/assets/css/fonts.css';g.rel = 'stylesheet';s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+<script>var _gaq = _gaq || [];var pluginUrl='//www.google-analytics.com/plugins/ga/inpage_linkid.js';_gaq.push(['_require', 'inpage_linkid', pluginUrl]);_gaq.push(['_setAccount', '{{ site.google_analytics }}']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
    po.src = 'https://apis.google.com/js/client:plusone.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
-<script>
-  $(document).ready(function() {
-      $(".icon-time").text(function (index, value) {
-        var iTime = Math.round(parseFloat(value));
-        var sTime = " " + iTime + " Minutes";
-        return sTime;
-      });
-    });
-</script>
+<script>$(document).ready(function() {$(".icon-time").text(function (index, value){var iTime = Math.round(parseFloat(value));var sTime = " " + iTime + " Minutes";return sTime;});});</script>
 <!-- Place this tag after the last +1 button tag. -->
-  <script type="text/javascript">
-    (function() {
+<script>(function() {
       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
       po.src = 'https://apis.google.com/js/platform.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);

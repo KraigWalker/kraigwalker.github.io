@@ -5,10 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<meta http-equiv="expires" content="604800" />
 <title>Unity &#8211; Creating an Isometric Camera in Unity &#8211; Kraig Walker</title>
 <meta name="description" content="Setting up orthographic projection in combination with camera rotation angles to create a functional isometric perspective with keyboard controls in Unity">
-<!-- Twitter Card and Open Graph tags -->
+
 <meta name="twitter:title" content="Creating an Isometric Camera in Unity">
 <meta name="twitter:site:id" content="14597666">
 <meta name="twitter:description" content="Setting up orthographic projection in combination with camera rotation angles to create a functional isometric perspective with keyboard controls in Unity">
@@ -178,20 +177,16 @@
       </span>Share</a>
       <a class="btn"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn"><i class="icon-facebook"></i>Share on Facebook</a>
-
       </div>
         <div id="disqus_thread"></div><!-- /#disqus_thread -->
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
+      </div>
+    </div>
     <nav class="pagination" role="navigation">
+      <a href="http://kraigwalker.azurewebsites.net/articles/an-idea-pimp-my-issue" class="btn" title="An Idea: Pimp My Issue">Previous article</a>
       
-        <a href="http://kraigwalker.azurewebsites.net/articles/an-idea-pimp-my-issue" class="btn" title="An Idea: Pimp My Issue">Previous article</a>
-      
-      
-    </nav><!-- /.pagination -->
+    </nav>
   </article>
-</div><!-- /#main -->
-
+</div>
 <div class="footer-wrapper">
   <footer role="contentinfo">
     <span>&copy; 2013 Kraig Walker</span>
@@ -206,61 +201,23 @@
 	<a href="http://kraigwalker.tumblr.com" title="Kraig Walker on Tumblr" target="_blank"><i class="icon-tumblr icon-2x"></i></a>
 </div><!-- /.social-icons -->
   </footer>
-</div><!-- /.footer-wrapper -->
-
+</div>
 <!-- Load Modernizr -->
 <script async src="http://kraigwalker.azurewebsites.net/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script async src="http://kraigwalker.azurewebsites.net/assets/js/main.min.js"></script>
-<script>
-(function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.href = 'http://kraigwalker.azurewebsites.net/assets/css/main.min.css';
-    g.rel = 'stylesheet'
-    s.parentNode.insertBefore(g, s);
-}(document, 'link'));
-</script>
-<script>
-(function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.href = 'http://kraigwalker.azurewebsites.net/assets/css/fonts.css';
-    g.rel = 'stylesheet'
-    s.parentNode.insertBefore(g, s);
-}(document, 'link'));
-</script>
+<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = 'http://kraigwalker.azurewebsites.net/assets/css/main.min.css';g.rel = 'stylesheet';s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
+<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = 'http://kraigwalker.azurewebsites.net/assets/css/fonts.css';g.rel = 'stylesheet';s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
 
 <!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-19175832-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+<script>var _gaq = _gaq || [];var pluginUrl='//www.google-analytics.com/plugins/ga/inpage_linkid.js';_gaq.push(['_require', 'inpage_linkid', pluginUrl]);_gaq.push(['_setAccount', 'UA-19175832-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
    po.src = 'https://apis.google.com/js/client:plusone.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
-<script>
-  $(document).ready(function() {
-      $(".icon-time").text(function (index, value) {
-        var iTime = Math.round(parseFloat(value));
-        var sTime = " " + iTime + " Minutes";
-        return sTime;
-      });
-    });
-</script>
+<script>$(document).ready(function() {$(".icon-time").text(function (index, value){var iTime = Math.round(parseFloat(value));var sTime = " " + iTime + " Minutes";return sTime;});});</script>
 <!-- Place this tag after the last +1 button tag. -->
-  <script type="text/javascript">
-    (function() {
+<script>(function() {
       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
       po.src = 'https://apis.google.com/js/platform.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
