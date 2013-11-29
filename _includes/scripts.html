@@ -2,7 +2,33 @@
 <script async src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script async src="{{ site.url }}/assets/js/main.min.js"></script>
-
+<script>
+(function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.href = '{{ site.url }}/assets/css/main.min.css';
+    g.rel = 'stylesheet'
+    s.parentNode.insertBefore(g, s);
+}(document, 'link'));
+</script>
+<script>
+(function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.href = '{{ site.url }}/assets/css/animate.css';
+    g.rel = 'stylesheet'
+    s.parentNode.insertBefore(g, s);
+}(document, 'link'));
+</script>
+<script>
+(function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.href = '{{ site.url }}/assets/css/fonts.css';
+    g.rel = 'stylesheet'
+    s.parentNode.insertBefore(g, s);
+}(document, 'link'));
+</script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
