@@ -6,7 +6,7 @@ description:      Design And Code Converge
 logo:             site-logo.jpg
 disqus_shortname: kraigwalker
 #Comment out url when working locally to resolve base urls correctly
-url: http://kraigwalker.com
+url: http://kraigwalker.azurewebsites.net
 
 # Owner/author information
 owner:
