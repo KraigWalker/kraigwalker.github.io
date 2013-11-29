@@ -1,3 +1,6 @@
+# project-wide settings
+destination: _site
+
 title:            Kraig Walker
 description:      Design And Code Converge
 logo:             site-logo.jpg
