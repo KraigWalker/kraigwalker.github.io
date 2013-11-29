@@ -57,5 +57,5 @@ kramdown:
     coderay_css: class
     coderay_line_numbers: ''
 
-include: [".htaccess"]
+include: [".htaccess, .deployment"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
