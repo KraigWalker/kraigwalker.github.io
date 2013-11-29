@@ -38,8 +38,7 @@
       </footer>
       <div class="entry-content">
         {{ content }}
-        {% if page.image.thumbnail %}<img class="entry-thumbnail-image" itemprop="image" src="{{ site.url }}/images/{{ page.image.thumbnail }}" alt="{{ page.title }}"></img>{% endif %}
-
+        {% if page.image.thumbnail %}<meta itemprop="image" content="{{ site.url }}/images/{{ page.image.thumbnail }}" />{% endif %}
       <div class="social-links">
       <a class="btn"><i class="icon-google-plus"></i>
       <span id="myBtn" class="g-interactivepost"
