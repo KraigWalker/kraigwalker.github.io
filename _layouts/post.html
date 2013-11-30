@@ -18,9 +18,6 @@
         <h1 id="title" class="entry-title" itemprop="headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
         <!-- for Google -->
         <meta itemprop="description" content="{{ page.description }}" />
-        <span>
-        <div class="fb-like" data-href="http://kraigwalker.com&#123;&#123; page.url &#125;&#125;" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-        </span>
       </header>
       <footer class="entry-meta">
         <img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
@@ -35,20 +32,22 @@
         {% if page.modified %}<span class="entry-date date modified updated"><time datetime="{{ page.modified }}" itemprop="dateModified"><i class="icon-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
         {% if site.disqus_shortname and page.comments %}<span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
         <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}"><i class="icon-link"></i> Permalink</a></span>
+        <span>
+          <div class="fb-like" data-href="http://kraigwalker.com&#123;&#123; page.url &#125;&#125;" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </span>
       </footer>
       <div class="entry-content">
         {{ content }}
         {% if page.image.thumbnail %}<meta itemprop="image" content="{{ site.url }}/images/{{ page.image.thumbnail }}" />{% endif %}
       <div class="social-links">
-      <a class="btn"><i class="icon-google-plus"></i>
-      <span id="myBtn" class="g-interactivepost"
+      <span id="myBtn" class="btn g-interactivepost"
         data-contenturl="http://kraigwalker.com{{ page.url }}"
         data-clientid="1079844583394-07nulvr6k1a3dd88k9lovf0qobkeukp8.apps.googleusercontent.com"
         data-cookiepolicy="http://kraigwalker.com"
         data-prefilltext={% if page.description %}"{{ page.description }}"{% else %}"{{ site.description }}"{% endif %}
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com{{ page.url }}">
-      </span>Share</a>
+        <i class="icon-google-plus"></i>Share</span>
       <a class="btn"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn"><i class="icon-facebook"></i>Share on Facebook</a>
       </div>
