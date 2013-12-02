@@ -28,23 +28,22 @@
 <meta property="og:type" content="website" />
 {% elsif page.layout == 'post'%}
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="{{ page.date | date: "%B %d, %Y"}}" />
-{%if page.published %}
-<meta property="og:article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ page.date | date: "%B %d, %Y" }}{% endif %}" />
-{% endif %}
-<meta property="article:author" content="https://www.facebook.com/kraig.walker" />
-<meta property="article:section" content="" />
-<meta property="article:tag" content="" />
-{% endif %}
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:url" content="{{ canonical }}">
+<meta property="og:url" content="{{ canonical }}/">
+{% endif %}
 {% if page.image.feature %}<meta property="og:image" content="http://kraigwalker.com/images/{{ page.image.feature }}" />{% endif %}
 <meta property="og:site_name" content="{{ site.title }}" />
+<meta property="article:published_time" content="{{ page.date | date: "%B %d, %Y"}}" />
+{%if page.published %}
+<meta property="article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ page.date | date: "%B %d, %Y" }}{% endif %}" />
+{% endif %}
+<meta property="article:author" content="https://www.facebook.com/kraig.walker" />
+<meta property="article:section" content="{% if page.og_section %}{{ page.og_section }}{% else %}Technology{% endif %}" />
+{% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}" />{% endfor %}
 <meta property="fb:admins" content="1257181099" />
 <!-- Webmaster Tools verfication -->
 {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}" />{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}" />{% endif %}
-<link rel="canonical" href="{{ canonical }}">
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 {% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 <!-- http://t.co/dKP3o1e -->
