@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2013-12-02:v1
+# 2013-12-02:v2
 
 #Explicitly cached 'master entries'.
 CACHE:
@@ -7,11 +7,7 @@ http://kraigwalker.com/assets/css/main.min.css
 http://kraigwalker.com/images/site-logo.jpg
 http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
-http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff
-http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff
-http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff
-http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff
-http://themes.googleusercontent.com/static/fonts/sourcecodepro/v3/mrl8jkM18OlOQN8JLgasD9Hq-FFgoDNV3GTKpHwuvtI.woff
+http://fonts.googleapis.com/css?family=Vollkhorn:400italic,700italic%7CSource+Sans+Pro:400,700,400italic,700italic%7CSource+Code+Pro:400&subset=latin,latin,latin
 
 NETWORK:
 *
