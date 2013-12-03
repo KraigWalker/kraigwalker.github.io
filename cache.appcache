@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2013-12-02:v3
+# 2013-12-02:v4
 
 #Explicitly cached 'master entries'.
 CACHE:
@@ -14,6 +14,8 @@ http://themes.googleusercontent.com/static/fonts/sourcecodepro/v3/mrl8jkM18OlOQN
 http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGIqjGYJUyOXcBwUQbRaNH6c.woff
 http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/M2Jd71oPJhLKp0zdtTvoM_bce-VcyLJMRR1FC9qWbU8.woff
 http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6PgYMAt3u4NmhhzLLLPJ5qH3rGVtsTkPsbDajuO5ueQw.woff
+http://themes.googleusercontent.com/static/fonts/vollkorn/v3/KNiAlx6phRqXCwnZZG51JHbFhgvWbfSbdVg11QabG8w.woff
+http://themes.googleusercontent.com/static/fonts/vollkorn/v3/Oiz0tNwvC-Nd29SBQWfWTL3hpw3pgy2gAi-Ip7WPMi0.woff
 
 NETWORK:
 *
