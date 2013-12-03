@@ -1,42 +1,42 @@
 @font-face {
   font-family: 'Vollkorn';
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url(http://kraigwalker.com/assets/fonts/Vollkorn-Italic.woff) format('woff');
 }
 @font-face {
   font-family: 'Vollkorn';
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
   src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url(http://kraigwalker.com/assets/fonts/Vollkorn-BoldItalic.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://kraigwalker.com/assets/fonts/SourceSansPro-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://kraigwalker.com/assets/fonts/SourceSansPro-Bold.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   src: local('Source Sans Pro Italic'), local('SourceSansPro-It'), url(http://kraigwalker.com/assets/fonts/SourceSansPro-It.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
   src: local('Source Sans Pro Bold Italic'), local('SourceSansPro-BoldIt'), url(http://kraigwalker.com/assets/fonts/SourceSansPro-BoldIt.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://kraigwalker.com/assets/fonts/SourceCodePro-Regular.woff) format('woff');
 }
