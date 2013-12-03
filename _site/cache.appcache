@@ -1,20 +1,20 @@
 CACHE MANIFEST
-# 2013-12-02:v6.3
+# 2013-12-02:v7.1
 
 #Explicitly cached 'master entries'.
 CACHE:
-http://kraigwalker.com/assets/css/fonts.css
-http://kraigwalker.com/assets/css/main.min.css
-http://kraigwalker.com/images/site-logo.jpg
+/assets/css/fonts.css
+/assets/css/main.min.css
+/images/site-logo.jpg
 http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
-http://kraigwalker.com/assets/fonts/Volkhov-Italic.woff
-http://kraigwalker.com/assets/fonts/Volkhov-BoldItalic.woff
-http://kraigwalker.com/assets/fonts/SourceSansPro-Regular.woff
-http://kraigwalker.com/assets/fonts/SourceSansPro-Bold.woff
-http://kraigwalker.com/assets/fonts/SourceSansPro-It.woff
-http://kraigwalker.com/assets/fonts/SourceSansPro-BoldIt.woff
-http://kraigwalker.com/assets/fonts/SourceCodePro-Regular.woff
+/assets/fonts/Volkhov-Italic.woff
+/assets/fonts/Volkhov-BoldItalic.woff
+/assets/fonts/SourceSansPro-Regular.woff
+/assets/fonts/SourceSansPro-Bold.woff
+/assets/fonts/SourceSansPro-It.woff
+/assets/fonts/SourceSansPro-BoldIt.woff
+/assets/fonts/SourceCodePro-Regular.woff
 http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
 
 NETWORK:
