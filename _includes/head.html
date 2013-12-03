@@ -69,9 +69,6 @@
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/apple-touch-icon-144x144-precomposed.png">
 <script>
   WebFontConfig = {
-    /*google: {
-        families: ['Vollkhorn:400italic,700italic:latin', 'Source+Sans+Pro:400,700{% if page.layout == "post" %},400italic,700italic:latin'{% endif %}{% if page.layout == "post" %},'Source+Code+Pro:400:latin'{% endif %}]
-      }*/
     custom: {
     	families: ['Vollkorn:i4,i7', 'Source Sans Pro:n4,i4,n7,i7'],
     	urls: ['http://kraigwalker.com/assets/css/fonts.css']
@@ -80,8 +77,7 @@
 
   (function() {
     var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js';
+    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js';
     wf.type = 'text/javascript';
     wf.async = 'true';
     var s = document.getElementsByTagName('script')[0];
