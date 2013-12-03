@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Vollkorn';
+  font-family: 'Volkhov';
   font-style: italic;
   font-weight: 400;
-  src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url(http://kraigwalker.com/assets/fonts/Vollkorn-Italic.woff) format('woff');
+  src: local('Volkhov Italic'), local('Volkhov-Italic'), url(http://kraigwalker.com/assets/fonts/Volkhov-Italic.woff) format('woff');
 }
 @font-face {
-  font-family: 'Vollkorn';
+  font-family: 'Volkhov';
   font-style: italic;
   font-weight: 700;
-  src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url(http://kraigwalker.com/assets/fonts/Vollkorn-BoldItalic.woff) format('woff');
+  src: local('Volkhov Bold Italic'), local('Volkhov-BoldItalic'), url(http://kraigwalker.com/assets/fonts/Volkhov-BoldItalic.woff) format('woff');
 }
 @font-face {
   font-family: 'Source Sans Pro';
