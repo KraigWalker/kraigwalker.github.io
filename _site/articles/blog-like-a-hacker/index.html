@@ -111,6 +111,24 @@ appCache.update(); // Attempt to update the user's cache.
 	      xfbml      : true                                  // Look for social plugins on the page
 	    });
 
+	    FB.ui(
+	      {
+	        method: 'feed',
+	        name: 'Blog Like A Hacker',
+	        link: 'http://kraigwalker.com/articles/blog-like-a-hacker',
+	        picture: 'typewriter.jpg',
+	        caption: 'Reference Documentation',
+	        description: 'Distilling the writing process to the bare essentials'
+	      },
+	      function(response) {
+	        if (response && response.post_id) {
+	          alert('Post was published.');
+	        } else {
+	          alert('Post was not published.');
+	        }
+	      }
+	    );
+
 	    // Additional initialization code such as adding Event Listeners goes here
 	  };
 
