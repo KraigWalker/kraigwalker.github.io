@@ -87,6 +87,16 @@ appCache.update(); // Attempt to update the user's cache.
   	  wf.async = 'true';
   	  var s = document.getElementsByTagName('script')[0];
   	  s.parentNode.insertBefore(wf, s);
+  	} else {
+  		var element = document.getElementsByTagName("html");
+  		element.className += "wf-loading";
+
+  		window.addEventListener("load", initText(), false);
+
+  		function initText() {
+  		        element.className += "wf-active";
+  		        element.className.replace( /?:^|\s)wf-loading(!\S)/g , 'wf-active');
+  		};
   	}
   })();
 </script>
