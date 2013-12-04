@@ -26,8 +26,8 @@
    po.src = 'https://apis.google.com/js/client:plusone.js';
    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
-</script>
-<script>
+</script>{% endif %}
+{% if page.layout == "post" %}<script>
   function loadGoogle(){
     (function() {
       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -36,6 +36,5 @@
     })();
   };
   setTimeout("loadGoogle", 100);
-</script>
-{% endif %}
+</script>{% endif %}
 {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}
