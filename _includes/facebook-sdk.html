@@ -11,7 +11,7 @@
 	  };
 
 	  // Load the SDK asynchronously
-	  (function(){
+	  function loadFacebook(){
 	     // If we've already installed the SDK, we're done
 	     if (document.getElementById('facebook-jssdk')) {return;}
 
@@ -27,5 +27,6 @@
 
 	     // Insert the Facebook JS SDK into the DOM
 	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
-	   }());
+	   };
+	   setTimeout("loadFacebook", 100);
 </script>
