@@ -83,12 +83,14 @@ appCache.update(); // Attempt to update the user's cache.
   	} else {
   		var element = document.getElementsByTagName("html");
   		element.className += "wf-loading";
+  		console.log("class assigned");
 
   		window.addEventListener("load", initText(), false);
+  		console.log("event listener added");
 
   		function initText() {
-  		        element.className += "wf-active";
-  		        element.className.replace( (/?:^|\s)wf-loading(!\S)/g) , 'wf-active');
+  		        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
+  		        element.className.replace( reg , 'wf-active');
   				console.log("fonts initialized from cache");
   		};
   	}
