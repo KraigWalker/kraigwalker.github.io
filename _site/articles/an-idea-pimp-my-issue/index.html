@@ -92,7 +92,7 @@ appCache.update(); // Attempt to update the user's cache.
 
   		function initText() {
   		        element.className += "wf-active";
-  		        element.className.replace( /?:^|\s)wf-loading(!\S)/g , 'wf-active');
+  		        element.className.replace( (/?:^|\s)wf-loading(!\S)/g) , 'wf-active');
   				console.log("fonts initialized from cache");
   		};
   	}
