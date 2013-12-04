@@ -1,12 +1,12 @@
 CACHE MANIFEST
-# 2013-12-02:v7.1
+# 2013-12-02:v7.2
 
 #Explicitly cached 'master entries'.
 CACHE:
 /assets/css/fonts.css
 /assets/css/main.min.css
 /images/site-logo.jpg
-http://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js
+http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/fonts/Volkhov-Italic.woff
 /assets/fonts/Volkhov-BoldItalic.woff
