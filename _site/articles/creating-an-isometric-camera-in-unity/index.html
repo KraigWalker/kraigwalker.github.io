@@ -115,7 +115,7 @@ appCache.update(); // Attempt to update the user's cache.
 	  };
 
 	  // Load the SDK asynchronously
-	  function loadFacebook(){
+	  (function(){
 	     // If we've already installed the SDK, we're done
 	     if (document.getElementById('facebook-jssdk')) {return;}
 
@@ -131,8 +131,7 @@ appCache.update(); // Attempt to update the user's cache.
 
 	     // Insert the Facebook JS SDK into the DOM
 	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
-	   };
-	   setTimeout("loadFacebook", 100);
+	   }());
 </script>
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <div class="navigation-wrapper">
