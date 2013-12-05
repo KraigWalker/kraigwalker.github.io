@@ -92,6 +92,8 @@ appCache.update(); // Attempt to update the user's cache.
   		        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
   		        element.className.replace( reg , 'wf-active');
   				console.log("fonts initialized from cache");
+  				element = document.getElementById('loading');
+  				document.removeChild(element);
   		};
   	}
   })();
@@ -100,7 +102,7 @@ appCache.update(); // Attempt to update the user's cache.
 </head>
 
 <body id="page" itemscope itemtype="http://schema.org/WebPage">
-  <div class="loading"></div>
+  <div id="loading"></div>
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 <div class="navigation-wrapper">
