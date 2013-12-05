@@ -25,6 +25,10 @@ body {
 	-ms-animation: rot .6s infinite linear;
 	animation: rot .6s infinite linear;
 }
+@-webkit-keyframes rot {
+	from {webkit-transform: rotate(0deg);}
+	to {webkit-transform: rotate(359deg);}
+}
 @keyframes rot {
 	from {transform: rotate(0deg);}
 	to {transform: rotate(359deg);}
