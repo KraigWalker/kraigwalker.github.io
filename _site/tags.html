@@ -85,9 +85,6 @@ appCache.update(); // Attempt to update the user's cache.
   		element.className += "wf-loading";
   		console.log("class assigned");
 
-  		window.addEventListener("load", initText(), false);
-  		console.log("event listener added");
-
   		function initText() {
   		        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
   		        element.className.replace( reg , 'wf-active');
@@ -95,6 +92,9 @@ appCache.update(); // Attempt to update the user's cache.
   				element = document.getElementById('loading');
   				document.removeChild(element);
   		};
+
+  		window.addEventListener("load", initText(), false);
+  		console.log("event listener added");
   	}
   })();
 </script>
