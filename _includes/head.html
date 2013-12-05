@@ -79,7 +79,7 @@ var appCache = window.applicationCache;
 appCache.update(); // Attempt to update the user's cache.
 
 function initText() {
-		var element = document.getElementsByTagName("html")[0];
+		var element = document.getElementById("html");
         var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
         element.className.replace( reg , 'wf-active');
 		console.log("fonts initialized from cache");
@@ -98,7 +98,7 @@ function initText() {
   	  var s = document.getElementsByTagName('script')[0];
   	  s.parentNode.insertBefore(wf, s);
   	} else {
-  		var element = document.getElementsByTagName("html")[0];
+  		var element = document.getElementById("html");
   		element.className += "wf-loading";
   		console.log("class assigned");
   	}
