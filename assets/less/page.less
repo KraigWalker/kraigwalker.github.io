@@ -13,53 +13,60 @@ body {
 // --------------------------------------------------
 
 .loading {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -60px 0 0 -60px;
-  background: #fff;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  border: 10px solid #19bee1;
-}
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -60px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 10px solid #19bee1
+    }
+
 .loading:after {
-  content: '';
-  background: transparent;
-  width: 140%;
-  height: 140%;
-  position: absolute;
-  border-radius: 100%;
-  top: -20%;
-  left: -20%;
-  opacity: 0.7;
-  box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
-  -webkit-animation: rotate 2s infinite linear;
-  animation: rotate 2s infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
-  }
-}
+    content: "";
+    background: trasparent;
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    top: -20%;
+    left: -20%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    -moz-box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
+    box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
+    animation: rotate 2s infinite linear
+    }
 
 @-webkit-keyframes rotate {
-    0% {
-    -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
-  }
+	0% {
+	    -webkit-transform: rotateZ(0deg);
+	    } 100% {
+	    -webkit-transform: rotateZ(360deg);
+	    }
 }
+@-moz-keyframes rotate {
+	0% {
+	    -moz-transform: rotateZ(0deg);
+	    } 100% {
+	    -moz-transform: rotateZ(360deg);
+	    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+        } 100% {
+        transform: rotateZ(360deg);
+        }
+    }
 
 // Top Navigation
 // --------------------------------------------------
