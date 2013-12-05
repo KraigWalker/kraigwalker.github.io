@@ -96,7 +96,8 @@ appCache.update(); // Attempt to update the user's cache.
   		        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
   		        element.className.replace( reg , 'wf-active');
   				console.log("fonts initialized from cache");
-  				element = document.getElementById('loading');
+  				element = document.getElementById("loading");
+  				console.log("The content of element is" + "\"" + element.innerHTML + "\".");
   				document.removeChild(element);
   		};
 
