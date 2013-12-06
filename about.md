@@ -16,6 +16,11 @@ I'm interested in the meticulous, discovering how different style decisions pan 
 	<meta itemprop="photo" content="" />
 	<meta itemprop="url" content="http://kraigwalker.com" />
 	<meta itemprop="address" content="" />
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<meta itemprop="addressCountry" content="Scotland" />
+		<meta itemprop="addressLocality" content="Prestwick" />
+		<meta itemprop="addressRegion" content="South Ayrshire" />
+	</div>
 	<meta itemprop="description" content="" />
 	<meta itemprop="image" content="" />
 	<meta itemprop="additionalName" content="Russell" />
