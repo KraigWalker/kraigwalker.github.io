@@ -4,6 +4,10 @@
         <loc>http://kraigwalker.com</loc>
     </url>
 
+    <url>
+    	<loc>http://kraigwalker.com/about</loc>
+    </url>
+
     
     <url>
         <loc>http://kraigwalker.com/articles/creating-an-isometric-camera-in-unity</loc>

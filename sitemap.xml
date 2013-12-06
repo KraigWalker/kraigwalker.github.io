@@ -7,6 +7,10 @@ layout: nil
         <loc>http://kraigwalker.com</loc>
     </url>
 
+    <url>
+    	<loc>http://kraigwalker.com/about</loc>
+    </url>
+
     {% for post in site.posts %}
     <url>
         <loc>http://kraigwalker.com{{ post.url }}</loc>
