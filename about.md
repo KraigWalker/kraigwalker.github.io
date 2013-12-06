@@ -12,17 +12,15 @@ I'm interested in the meticulous, discovering how different style decisions pan 
 
 <div itemscope itemtype="http://schema.org/Person">
 	<meta itemprop="name" content="Kraig Walker" />
-	<meta itemprop="role" content="Game Developer" />
-	<meta itemprop="photo" content="" />
+	<meta itemprop="jobTitle" content="Game Developer" />
+	<meta itemprop="image" content="http://kraigwalker.com/images/kraig_walker.jpg" />
 	<meta itemprop="url" content="http://kraigwalker.com" />
-	<meta itemprop="address" content="" />
 	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<meta itemprop="addressCountry" content="Scotland" />
 		<meta itemprop="addressLocality" content="Prestwick" />
 		<meta itemprop="addressRegion" content="South Ayrshire" />
 	</div>
 	<meta itemprop="description" content="" />
-	<meta itemprop="image" content="" />
 	<meta itemprop="additionalName" content="Russell" />
 	<meta itemprop="birthDate" content="1992-08-31" />
 	<meta itemprop="email" content="kraig_walker@me.com" />
@@ -30,5 +28,4 @@ I'm interested in the meticulous, discovering how different style decisions pan 
 	<meta itemprop="familyName" content="Walker" />
 	<meta itemprop="gender" content="male" />
 	<meta itemprop="nationality" content="Scotland" />
-	<meta itemprop="jobTitle" content="Game Developer" />
 </div>
