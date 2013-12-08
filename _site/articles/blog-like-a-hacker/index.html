@@ -208,6 +208,10 @@ function fbShare(){
         <span>
           <div class="fb-like" data-href="http://kraigwalker.com/articles/blog-like-a-hacker" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </span>
+        <span>
+          <div><a>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        </span>
       </footer>
       <div class="entry-content">
         <p>Oh look! It’s another complete refresh of your website Kraig!</p>
@@ -235,8 +239,7 @@ Progressively my blogging systems have become more and more minimalistic, starti
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com/articles/blog-like-a-hacker">
         <i class="icon-google-plus"></i>Share</span>
-      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"><a >Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></i>Tweet</a>
+      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn facebook" onclick="fbShare();"><i class="icon-facebook"></i>Share on Facebook</a>
       </div>
         <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -266,6 +269,16 @@ Progressively my blogging systems have become more and more minimalistic, starti
 <!-- Load Modernizr -->
 <script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = 'http://kraigwalker.com/assets/css/main.min.css';g.rel = 'stylesheet';g.async="true";s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
 <script>
+  window.addEventListener('devicelight', function(event) {
+    var body = document.getElementsByTagName('body')[0];
+    if(event.value < 50) {
+      body.classList.add('darklight');
+      body.classList.remover('brightlight');
+    } else {
+      html.classList.add('brightlight');
+      html.classList.remove('darklight');
+    }
+  });
   // Check if a new cache is available on page load.
   window.addEventListener('load', function(e) {
 

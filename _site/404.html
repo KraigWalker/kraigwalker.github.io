@@ -172,6 +172,16 @@ function initText() {
 <!-- Load Modernizr -->
 <script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = 'http://kraigwalker.com/assets/css/main.min.css';g.rel = 'stylesheet';g.async="true";s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
 <script>
+  window.addEventListener('devicelight', function(event) {
+    var body = document.getElementsByTagName('body')[0];
+    if(event.value < 50) {
+      body.classList.add('darklight');
+      body.classList.remover('brightlight');
+    } else {
+      html.classList.add('brightlight');
+      html.classList.remove('darklight');
+    }
+  });
   // Check if a new cache is available on page load.
   window.addEventListener('load', function(e) {
 

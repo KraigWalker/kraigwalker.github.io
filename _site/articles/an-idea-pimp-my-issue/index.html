@@ -208,6 +208,10 @@ function fbShare(){
         <span>
           <div class="fb-like" data-href="http://kraigwalker.com/articles/an-idea-pimp-my-issue" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </span>
+        <span>
+          <div><a>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        </span>
       </footer>
       <div class="entry-content">
         <p>One of the things I’ve seen more and more when working with other developers is a sprawling variation in the organizational and presentational structure of Issue tags in projects. Issue tags are one of those little procrasta-tools in <a href="https://github.com/blog/831-issues-2-0-the-next-generation">Github Issues</a> which you could play with for hours, creating your own labeling system, setting out a colour system that’s just right, before any actual work has even been done.</p>
@@ -264,8 +268,7 @@ function fbShare(){
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com/articles/an-idea-pimp-my-issue">
         <i class="icon-google-plus"></i>Share</span>
-      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"><a >Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></i>Tweet</a>
+      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn facebook" onclick="fbShare();"><i class="icon-facebook"></i>Share on Facebook</a>
       </div>
         <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -295,6 +298,16 @@ function fbShare(){
 <!-- Load Modernizr -->
 <script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = 'http://kraigwalker.com/assets/css/main.min.css';g.rel = 'stylesheet';g.async="true";s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
 <script>
+  window.addEventListener('devicelight', function(event) {
+    var body = document.getElementsByTagName('body')[0];
+    if(event.value < 50) {
+      body.classList.add('darklight');
+      body.classList.remover('brightlight');
+    } else {
+      html.classList.add('brightlight');
+      html.classList.remove('darklight');
+    }
+  });
   // Check if a new cache is available on page load.
   window.addEventListener('load', function(e) {
 

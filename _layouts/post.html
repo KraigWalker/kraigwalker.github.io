@@ -40,6 +40,10 @@
         <span>
           <div class="fb-like" data-href="http://kraigwalker.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </span>
+        <span>
+          <div><a>Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+        </span>
       </footer>
       <div class="entry-content">
         {{ content }}
@@ -53,8 +57,7 @@
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com{{ page.url }}">
         <i class="icon-google-plus"></i>Share</span>
-      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"><a >Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></i>Tweet</a>
+      <a class="btn twitter twitter-share-button" data-lang="en" href="https://twitter.com/share"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn facebook" onclick="fbShare();"><i class="icon-facebook"></i>Share on Facebook</a>
       </div>
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
