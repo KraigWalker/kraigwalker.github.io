@@ -39,6 +39,8 @@ $(document).ready(function() {
     $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value));
     });
+        var element = $("#loading");
+        document.removeChild(element);
   });
 
 
