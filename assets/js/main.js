@@ -41,6 +41,7 @@ WebFontConfig = {
   }
 };
 var appCache = window.applicationCache;
+if(window.applicationCache){
 appCache.update(); // Attempt to update the user's cache.
   (function() {
     console.log(appCache.status);
@@ -56,6 +57,7 @@ appCache.update(); // Attempt to update the user's cache.
       console.log("class assigned");
     }
   })();
+};
 
 $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").addClass( "wf-active" ).removeClass( "wf-loading" );
