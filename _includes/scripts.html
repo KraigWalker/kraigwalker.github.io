@@ -1,5 +1,5 @@
 <!-- Load Modernizr -->
-<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = '{{ site.url }}/assets/css/main.min.css';g.rel = 'stylesheet';g.async="true";s.parentNode.insertBefore(g, s);}(document, 'link'));</script>
+{% if page.layout != "page" %}<script>(function(d, t) {var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.href = '{{ site.url }}/assets/css/main.min.css';g.rel = 'stylesheet';g.async="true";s.parentNode.insertBefore(g, s);}(document, 'link'));</script>{% endif %}
 <script>
   window.addEventListener('devicelight', function(event) {
     var body = document.getElementsByTagName('body')[0];
