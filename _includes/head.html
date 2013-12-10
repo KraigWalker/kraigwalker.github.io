@@ -75,9 +75,7 @@ WebFontConfig = {
   }
 };
 var appCache = window.applicationCache;
-
 appCache.update(); // Attempt to update the user's cache.
-
   (function() {
   	console.log(appCache.status)
   	if (appCache.status == window.applicationCache.UNCACHED) {
@@ -92,6 +90,8 @@ appCache.update(); // Attempt to update the user's cache.
   		element.className += "wf-loading";
   		console.log("class assigned");
   	}
+  	window.addEventListener("load", initText(), false);
+  	console.log("event listener added");
   })();
 </script>
 {% include inline_styles.html %}
