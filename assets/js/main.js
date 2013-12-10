@@ -66,7 +66,7 @@ $(document).ready(function() {
   console.log("calculating read tme");
   $(".entry-readingtime").text(function (index, value) {
       console.log("Read Time" + Math.round(parseFloat(value)) + "Minutes.");
-      return Math.round(parseFloat(value));
+      return Math.round(parseFloat(value) + " min");
     });
   });
 
