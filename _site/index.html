@@ -202,6 +202,20 @@ function initText() {
 </script>
 
 
+<script>
+function initText() {
+    var element = document.getElementById("html");
+        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
+        element.className.replace( reg , 'wf-active');
+    console.log("fonts initialized from cache");
+    var element = document.getElementById("loading");
+    console.log("The content of element is" + "\"" + element.innerHTML + "\".");
+    document.removeChild(element);
+};
+
+window.addEventListener("load", initText(), false);
+console.log("event listener added");
+</script>
 
 </body>
 </html>
