@@ -9,7 +9,17 @@ disqus_shortname: kraigwalker
 url: http://kraigwalker.com
 
 assets:
-  cache: true
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - images
+    - assets/css
+    - assets/js
+    - assets/fonts
+  cachebust: soft
+  js_compressor: nil
+  css_compressort: nil
+
 
 # Owner/author information
 owner:
