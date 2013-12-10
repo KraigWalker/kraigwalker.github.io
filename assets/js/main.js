@@ -63,6 +63,7 @@ $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
   $(".entry-readingtime").text(function (index, value) {
+      console.log(Math.round(parseFloat(value)));
       return Math.round(parseFloat(value));
     });
   });
@@ -882,4 +883,4 @@ var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
 // FitVids options
 $(function() {
 	$("article").fitVids();
-});
+  });
