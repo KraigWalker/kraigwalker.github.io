@@ -8,6 +8,9 @@ disqus_shortname: kraigwalker
 #Comment out url when working locally to resolve base urls correctly
 url: http://kraigwalker.com
 
+assets:
+  cache: true
+
 # Owner/author information
 owner:
   name:           Kraig Walker
