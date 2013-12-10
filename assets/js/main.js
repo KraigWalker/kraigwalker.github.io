@@ -36,11 +36,10 @@ window.matchMedia = window.matchMedia || (function( doc, undefined ) {
 
 
 $(document).ready(function() {
+  $( "#loading").remove();
     $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value));
     });
-        var element = $("#loading");
-        document.removeChild(element);
   });
 
 
