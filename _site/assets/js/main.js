@@ -34,6 +34,29 @@ window.matchMedia = window.matchMedia || (function( doc, undefined ) {
 
 }( document ));
 
+WebFontConfig = {
+  custom: {
+    families: ['Vollkorn:i4,i7', 'Source Sans Pro:n4,i4,n7,i7'],
+    urls: ['http://kraigwalker.com/assets/css/fonts.css']
+  }
+};
+var appCache = window.applicationCache;
+appCache.update(); // Attempt to update the user's cache.
+  (function() {
+    console.log(appCache.status)
+    if (appCache.status == window.applicationCache.UNCACHED) {
+      var wf = document.createElement('script');
+      wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    } else {
+      var element = document.getElementById("html");
+      element.className += "wf-loading";
+      console.log("class assigned");
+    }
+  })();
 
 $(document).ready(function() {
   $( "#loading").remove();
