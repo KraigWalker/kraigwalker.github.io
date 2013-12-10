@@ -6,13 +6,10 @@
 <head>
 {% include head.html %}
 </head>
-
 <body id="page" itemscope itemtype="http://schema.org/WebPage">
   <div id="loading"></div>
-
 {% include browser-upgrade.html %}
 {% include navigation.html %}
-
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
   <article class="hentry" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}">{% endif %}
@@ -26,29 +23,11 @@
     </div><!-- /.entry-wrapper -->
   </article>
 </div><!-- /#main -->
-
 <div class="footer-wrapper">
   <footer role="contentinfo">
     {% include footer.html %}
   </footer>
 </div><!-- /.footer-wrapper -->
-
 {% include scripts.html %}
-<script>
-function initText() {
-  var element;
-    //var element = document.getElementById("html");
-      //  var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
-        //element.className.replace( reg , 'wf-active');
-    //console.log("fonts initialized from cache");
-    var element = $("#loading");
-    console.log("The content of element is" + "\"" + element.innerHTML + "\".");
-    document.removeChild(element);
-};
-
-window.addEventListener("load", initText(), false);
-console.log("event listener added");
-</script>
-
 </body>
 </html>
