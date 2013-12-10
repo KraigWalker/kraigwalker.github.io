@@ -43,7 +43,7 @@ WebFontConfig = {
 var appCache = window.applicationCache;
 appCache.update(); // Attempt to update the user's cache.
   (function() {
-    console.log(appCache.status)
+    console.log(appCache.status);
     if (appCache.status == window.applicationCache.UNCACHED) {
       var wf = document.createElement('script');
       wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js';
@@ -52,8 +52,7 @@ appCache.update(); // Attempt to update the user's cache.
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(wf, s);
     } else {
-      var element = document.getElementById("html");
-      element.className += "wf-loading";
+      var element = $("#html").addClass( "wf-loading" );
       console.log("class assigned");
     }
   })();
