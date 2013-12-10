@@ -71,16 +71,6 @@ var appCache = window.applicationCache;
 
 appCache.update(); // Attempt to update the user's cache.
 
-function initText() {
-		var element = document.getElementById("html");
-        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
-        element.className.replace( reg , 'wf-active');
-		console.log("fonts initialized from cache");
-		var element = document.getElementById("loading");
-		console.log("The content of element is" + "\"" + element.innerHTML + "\".");
-		document.removeChild(element);
-};
-
   (function() {
   	console.log(appCache.status)
   	if (appCache.status == window.applicationCache.UNCACHED) {

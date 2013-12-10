@@ -75,16 +75,6 @@ var appCache = window.applicationCache;
 
 appCache.update(); // Attempt to update the user's cache.
 
-function initText() {
-		var element = document.getElementById("html");
-        var reg = new RegExp('(\\s|^)'+'wf-loading'+'(\\s|$)');
-        element.className.replace( reg , 'wf-active');
-		console.log("fonts initialized from cache");
-		var element = document.getElementById("loading");
-		console.log("The content of element is" + "\"" + element.innerHTML + "\".");
-		document.removeChild(element);
-};
-
   (function() {
   	console.log(appCache.status)
   	if (appCache.status == window.applicationCache.UNCACHED) {
@@ -207,7 +197,7 @@ function fbShare(){
           <div class="fb-like" data-href="http://kraigwalker.com/articles/creating-an-isometric-camera-in-unity" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </span>
         <span>
-          <div><a class="twitter-share-button" data-lang="en" data-via="kraig_walker" data-related="kraig_walker:Follow Kraig Walker for updates and one-to-one time."href="https://twitter.com/share">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+          <div><a class="twitter-share-button" data-lang="en" data-via="kraig_walker" data-related="kraig_walker:Follow Kraig Walker for updates and one-to-one time." data-url="http://kraigwalker.com/articles/creating-an-isometric-camera-in-unity" href="https://twitter.com/share">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
         </span>
       </footer>
       <div class="entry-content">
