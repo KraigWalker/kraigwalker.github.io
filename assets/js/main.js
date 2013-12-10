@@ -58,6 +58,7 @@ appCache.update(); // Attempt to update the user's cache.
   })();
 
 $(document).ready(function() {
+  $("#html").addClass( "wf-active" ).removeClass( "wf-loading" );
   $( "#loading").remove();
     $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value));
