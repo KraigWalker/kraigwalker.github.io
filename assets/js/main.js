@@ -57,12 +57,12 @@ appCache.update(); // Attempt to update the user's cache.
       console.log("class assigned");
     }
   })();
-};
+}
 
 $(document).ready(function() {
-  $(".navigation-wrapper .masthead #main .footer-wrapper").addClass( "wf-active" ).removeClass( "wf-loading" );
+  $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
-    $(".entry-readingtime").text(function (index, value) {
+  $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value));
     });
   });
