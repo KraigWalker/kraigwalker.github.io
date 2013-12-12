@@ -1,1 +1,29 @@
-CACHE MANIFEST # revCACHE: /assets/css/fonts.css /assets/css/main.min.css /images/site-logo.jpg http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js /assets/fonts/Volkhov-Italic.woff /assets/fonts/Volkhov-BoldItalic.woff /assets/fonts/SourceSansPro-Regular.woff /assets/fonts/SourceSansPro-Bold.woff /assets/fonts/SourceSansPro-It.woff /assets/fonts/SourceSansPro-BoldIt.woff /assets/fonts/SourceCodePro-Regular.woff http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0 /assets/js/main.min.js /assets/js/vendor/modernizr-2.6.2.custom.min.js /404.html/about/index.html/feed.xml/index.html/sitemap.xml/tags.htmlNETWORK: *http://* https://*
+CACHE MANIFEST
+# rev {{ site.time }}
+
+CACHE:
+/assets/css/fonts.css
+/assets/css/main.min.css
+/images/site-logo.jpg
+http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
+http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
+/assets/fonts/Volkhov-Italic.woff
+/assets/fonts/Volkhov-BoldItalic.woff
+/assets/fonts/SourceSansPro-Regular.woff
+/assets/fonts/SourceSansPro-Bold.woff
+/assets/fonts/SourceSansPro-It.woff
+/assets/fonts/SourceSansPro-BoldIt.woff
+/assets/fonts/SourceCodePro-Regular.woff
+http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
+/assets/js/main.min.js
+/assets/js/vendor/modernizr-2.6.2.custom.min.js
+{% for page in site.pages %}{% if page.url != '/cache.appcache' %}{{ page.url }}{% endif %}
+{% endfor %}
+{% for item in site.images %}{{ item.url }}
+{% endfor %}
+
+NETWORK:
+*
+
+http://*
+https://*

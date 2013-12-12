@@ -1,7 +1,5 @@
----
----
 CACHE MANIFEST
-# rev {{ site.buildtime }}
+# rev {{ site.time }}
 
 CACHE:
 /assets/css/fonts.css
@@ -19,8 +17,10 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
 /assets/js/main.min.js
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
-{% for page in site.pages %}{% if page.url != '/cache.appcache' %}{{ page.url }}{% endif %}{% endfor %}
-{% for item in site.images %}{{ item.url }}{% endfor %}
+{% for page in site.pages %}{% if page.url != '/cache.appcache' %}{{ page.url }}{% endif %}
+{% endfor %}
+{% for item in site.images %}{{ item.url }}
+{% endfor %}
 
 NETWORK:
 *
