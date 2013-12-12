@@ -9,20 +9,7 @@ disqus_shortname: kraigwalker
 url: http://kraigwalker.com
 
 jekyll-press:
-  exclude: '_site/assets/css/inline_styles.css, _site/assets/css/animate.css'
-
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - images
-    - assets/css
-    - assets/js
-    - assets/fonts
-  cachebust: soft
-  js_compressor: nil
-  css_compressort: nil
-
+  exclude: '*.appcache, _site/assets/css/inline_styles.css, _site/assets/css/animate.css'
 
 # Owner/author information
 owner:

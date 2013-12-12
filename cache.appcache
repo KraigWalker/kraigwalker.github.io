@@ -1,5 +1,7 @@
+---
+---
 CACHE MANIFEST
-# rev {{ site.time }}
+# rev {{ site.time | date_to_xmlschema }}
 
 CACHE:
 /assets/css/fonts.css
