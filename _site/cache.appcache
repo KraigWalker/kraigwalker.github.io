@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2013-12-14T23:22:26+00:00
+# rev 2013-12-14T23:46:55+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -15,7 +15,7 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/fonts/SourceSansPro-It.woff
 /assets/fonts/SourceSansPro-BoldIt.woff
 /assets/fonts/SourceCodePro-Regular.woff
-http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
+/assets/fonts/fontawesome-webfont.woff
 /assets/js/main.min.js
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
 /404.html

@@ -17,7 +17,7 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/fonts/SourceSansPro-It.woff
 /assets/fonts/SourceSansPro-BoldIt.woff
 /assets/fonts/SourceCodePro-Regular.woff
-http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?v=3.2.0
+/assets/fonts/fontawesome-webfont.woff
 /assets/js/main.min.js
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
 {% for page in site.pages %}{% if page.url != '/cache.appcache' %}{% if page.url contains ".html" or page.url contains ".xml" %}{{ page.url }}{% else %}{{ page.url }}/{{ page.url }}.html{% endif %}{% endif %}
