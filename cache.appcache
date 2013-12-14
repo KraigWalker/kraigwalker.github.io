@@ -22,7 +22,8 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
 {% for page in site.pages %}{% if page.url != '/cache.appcache' %}{% if page.url contains ".html" or page.url contains ".xml" %}{{ page.url }}{% else %}{{ page.url }}/{{ page.url }}.html{% endif %}{% endif %}
 {% endfor %}
-
+{% for post in site.posts %}{{ post.url }}/index.html
+{% endfor %}
 # Post Images - Until there's an automated method, list manually
 
 /images/arran.jpg
