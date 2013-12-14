@@ -6,5 +6,5 @@ tags: [Kraig Walker, Games, Game, Developer, Design, Code, Programming, mobile, 
 ---
 
 <ul class="post-list">{% for post in site.posts limit:10 %}
-  <li><article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>{% endfor %}
+  <li><article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><a href="{{ site.url }}{{ post.url }}/index.html">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>{% endfor %}
 </ul>
