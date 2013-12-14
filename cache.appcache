@@ -36,10 +36,8 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /images/typewriter.jpg
 
 # 3rd party plugins - typically for social buttons
-http://www.google-analytics.com/ga.js
 https://platform.twitter.com/widgets.js
 http://go.disqus.com/count.js
-https://apis.google.com/js/client:plusone.js
 http://connect.facebook.net/en_US/all.js
 
 NETWORK:
