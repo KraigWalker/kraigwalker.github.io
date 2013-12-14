@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2013-12-14T23:21:06+00:00
+# rev 2013-12-14T23:22:26+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -42,7 +42,6 @@ http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?
 # 3rd party plugins - typically for social buttons
 http://www.google-analytics.com/ga.js
 https://platform.twitter.com/widgets.js
-http://go.disqus.com/embed.ignition.js
 http://go.disqus.com/count.js
 https://apis.google.com/js/client:plusone.js
 http://connect.facebook.net/en_US/all.js
