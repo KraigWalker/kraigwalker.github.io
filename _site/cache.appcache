@@ -1,10 +1,11 @@
 CACHE MANIFEST
-# rev 2013-12-14T17:07:03+00:00
+# rev 2013-12-14T23:10:24+00:00
 
 CACHE:
 /assets/css/fonts.css
 /assets/css/main.min.css
 /images/site-logo.jpg
+/images/kraig_walker.jpg
 http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/fonts/Volkhov-Italic.woff
@@ -26,6 +27,17 @@ http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?
 /tags.html
 
 
+# Post Images - Until there's an automated method, list manually
+
+/images/arran.jpg
+/images/camera_settings.jpg
+/images/clipping_error.jpg
+/images/final_capture.jpg
+/images/isometric_step1.jpg
+/images/newyork_isometric.jpg
+/images/pimpmyride.jpg
+/images/project_tab.jpg
+/images/typewriter.jpg
 
 NETWORK:
 *

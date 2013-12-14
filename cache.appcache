@@ -7,6 +7,7 @@ CACHE:
 /assets/css/fonts.css
 /assets/css/main.min.css
 /images/site-logo.jpg
+/images/kraig_walker.jpg
 http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /assets/fonts/Volkhov-Italic.woff
@@ -21,8 +22,18 @@ http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
 {% for page in site.pages %}{% if page.url != '/cache.appcache' %}{% if page.url contains ".html" or page.url contains ".xml" %}{{ page.url }}{% else %}{{ page.url }}/{{ page.url }}.html{% endif %}{% endif %}
 {% endfor %}
-{% for item in site.images %}{{ item.url }}
-{% endfor %}
+
+# Post Images - Until there's an automated method, list manually
+
+/images/arran.jpg
+/images/camera_settings.jpg
+/images/clipping_error.jpg
+/images/final_capture.jpg
+/images/isometric_step1.jpg
+/images/newyork_isometric.jpg
+/images/pimpmyride.jpg
+/images/project_tab.jpg
+/images/typewriter.jpg
 
 NETWORK:
 *
