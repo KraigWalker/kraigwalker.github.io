@@ -35,6 +35,14 @@ http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?
 /images/project_tab.jpg
 /images/typewriter.jpg
 
+# 3rd party plugins - typically for social buttons
+http://www.google-analytics.com/ga.js
+https://platform.twitter.com/widgets.js
+http://kraigwalker.disqus.com/embed.js
+http://go.disqus.com/count.js
+https://apis.google.com/js/client:plusone.js
+http://connect.facebook.net/en_US/all.js
+
 NETWORK:
 *
 
