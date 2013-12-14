@@ -1,4 +1,7 @@
-CACHE MANIFEST # rev 2013-12-12T23:15:44+00:00CACHE:
+CACHE MANIFEST
+# rev 2013-12-14T16:30:56+00:00
+
+CACHE:
 /assets/css/fonts.css
 /assets/css/main.min.css
 /images/site-logo.jpg
@@ -16,13 +19,16 @@ http://netdna.bootstrapcdn.com/font-awesome/3.2.0/font/fontawesome-webfont.woff?
 /assets/js/vendor/modernizr-2.6.2.custom.min.js
 /404.html
 /about/index.html
-/index.html
+
 /feed.xml
 /index.html
 /sitemap.xml
 /tags.html
 
+
+
 NETWORK:
 *
+
 http://*
 https://*

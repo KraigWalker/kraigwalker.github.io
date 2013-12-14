@@ -9,7 +9,7 @@ disqus_shortname: kraigwalker
 url: http://kraigwalker.com
 
 jekyll-press:
-  exclude: '*.appcache, _site/assets/css/inline_styles.css, _site/assets/css/animate.css'
+  exclude: ['cache.appcache','_site/cache.appcache', '_site/assets/css/inline_styles.css', '_site/assets/css/animate.css']
 
 # Owner/author information
 owner:
@@ -65,5 +65,5 @@ kramdown:
     coderay_css: class
     coderay_line_numbers: ''
 
-include: [".htaccess, .deployment"]
+include: ["cache.appcache, .htaccess, .deployment"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
