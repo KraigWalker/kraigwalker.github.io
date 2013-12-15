@@ -63,6 +63,7 @@ console.log("ready!");
 $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
+  if(navigator.onLine){}else{$( "#myBtn, .btn.twitter, .btn.facebook").remove();}
   $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value)) + " min";
     });
