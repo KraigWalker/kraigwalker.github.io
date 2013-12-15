@@ -32,16 +32,16 @@
         {% if page.modified %}<span class="entry-date date modified updated"><time datetime="{{ page.modified }}" itemprop="dateModified"><i class="icon-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
         {% if site.disqus_shortname and page.comments %}<span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
         <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}"><i class="icon-link"></i> Permalink</a></span>
-        <span>
+        <span class="social-span-class">
           <div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/104694977517220407329" data-rel="author"></div>
         </span>
-        <span>
+        <span class="social-span-class">
           <div class="g-plusone" data-size="large"></div>
         </span>
-        <span>
+        <span class="social-span-class">
           <div class="fb-like" data-href="http://kraigwalker.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
         </span>
-        <span>
+        <span class="social-span-class">
           <div><a class="twitter-share-button"
             href="https://twitter.com/share"
             data-lang="en"
