@@ -40,14 +40,13 @@
 {% if page.layout == "post" %}<script>
   function loadGoogle(){
     if(navigator.onLine){
+      console.log("online!")
     (function() {
       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
       po.src = 'https://apis.google.com/js/platform.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
-  } else {
-    console.log("Didn't load Google+ because the client is offline");
-  }
+  } else {console.log("Didn't load Google+ because the client is offline");}
   };
   setTimeout("loadGoogle", 100);
 </script>{% endif %}
