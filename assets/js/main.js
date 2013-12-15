@@ -42,7 +42,9 @@ WebFontConfig = {
 };
 var appCache = window.applicationCache;
 if(window.applicationCache){
+  if(navigator.onLine){
 appCache.update(); // Attempt to update the user's cache.
+}
   (function() {
     console.log(appCache.status);
     if (appCache.status == window.applicationCache.UNCACHED) {
@@ -63,7 +65,7 @@ console.log("ready!");
 $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
-  if(navigator.onLine){}else{$( "#myBtn, .btn.twitter, .btn.facebook").remove();}
+  if(navigator.onLine){}else{$( "#myBtn, .btn.twitter, .btn.facebook, .dsq-brlink").remove();}
   $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value)) + " min";
     });
