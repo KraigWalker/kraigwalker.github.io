@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# rev 2013-12-15T13:05:28+00:00
+# rev 2013-12-15T13:30:27+00:00
 
 CACHE:
 /assets/css/fonts.css
 /assets/css/main.min.css
-/images/site-logo.jpg
+/images/site-logo.png
 /images/kraig_walker.jpg
 http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
 http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
