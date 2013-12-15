@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2013-12-15T19:27:33+00:00
+# rev 2013-12-15T19:28:39+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -56,4 +56,4 @@ https://*
 
 FALLBACK:
 
-/offline.html
+/ /offline.html
