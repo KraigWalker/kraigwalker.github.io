@@ -1,0 +1,54 @@
+CACHE MANIFEST
+# rev 2013-12-15T15:07:59+00:00
+
+CACHE:
+/assets/css/fonts.css
+/assets/css/main.min.css
+/images/site-logo.png
+/images/kraig_walker.jpg
+http://ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js
+http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
+/assets/fonts/Volkhov-Italic.woff
+/assets/fonts/Volkhov-BoldItalic.woff
+/assets/fonts/SourceSansPro-Regular.woff
+/assets/fonts/SourceSansPro-Bold.woff
+/assets/fonts/SourceSansPro-It.woff
+/assets/fonts/SourceSansPro-BoldIt.woff
+/assets/fonts/SourceCodePro-Regular.woff
+/assets/fonts/fontawesome-webfont.woff
+/assets/js/main.min.js
+/assets/js/vendor/modernizr-2.6.2.custom.min.js
+/404.html
+/about/index.html
+
+/feed.xml
+/index.html
+/sitemap.xml
+/tags.html
+
+/articles/creating-an-isometric-camera-in-unity/index.html
+/articles/an-idea-pimp-my-issue/index.html
+/articles/blog-like-a-hacker/index.html
+
+# Post Images - Until there's an automated method, list manually
+
+/images/arran.jpg
+/images/camera_settings.jpg
+/images/clipping_error.jpg
+/images/final_capture.jpg
+/images/isometric_step1.jpg
+/images/newyork_isometric.jpg
+/images/pimpmyride.jpg
+/images/project_tab.jpg
+/images/typewriter.jpg
+
+# 3rd party plugins - typically for social buttons
+https://platform.twitter.com/widgets.js
+http://go.disqus.com/count.js
+http://connect.facebook.net/en_US/all.js
+
+NETWORK:
+*
+
+http://*
+https://*
