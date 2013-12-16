@@ -7,6 +7,7 @@ tags: [blog, unity, camera, c#, isometric, tutorial, orthographic]
 image:
   feature: newyork_isometric.jpg
   thumbnail: newyork_isometric_150.jpg
+tweet: "Creating an Isometric Camera in Unity"
 comments: true
 primary: "Unity"
 modified: 2013-11-28
