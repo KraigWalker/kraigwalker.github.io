@@ -12,6 +12,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:src" content="http://kraigwalker.com/images/{{ page.image.feature }}">
 {% endif %}
+{% if page.next %}<link rel="next" href="{{ site.url }}{{ page.next.url }}" />{% endif %}
+{% if page.previous %}<link rel="prev" href="{{ site.url }}{{ page.previous.url }}" />{% endif %}
 <meta name="application-name" content="Kraig Walker" />
 <meta name="msapplication-tooltip" content="Kraig Walker" />
 <meta name="msapplication-starturl" content="/" />
