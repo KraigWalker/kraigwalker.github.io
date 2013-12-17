@@ -35,9 +35,28 @@ function fbShare(){
 	FB.login(function(response) {
 	   if (response.authResponse) {
 	     console.log('Logged in');
-
 	   } else {
 	     console.log('Not logged in to Facebook');
 	   }
 	 });
+	FB.ui(
+	  {
+	  	display: "iframe",
+	    method: 'feed',
+	    name: '{{ page.title }}',
+	    link: '{{ site.url }}{{ page.url }}',
+	    {% if page.image.feature %}picture: '{{ site.url }}/images/{{ page.image.feature }}',{% endif %}
+	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
+	    description: '{{ page.description }}',
+	    actions: {"name":"", "link":""}
+	  },
+	  function(response) {
+	    if (response && response.post_id) {
+	      alert('Post was published.');
+	    } else {
+	      alert('Post was not published.');
+	    }
+	  }
+	);
+};
 </script>
