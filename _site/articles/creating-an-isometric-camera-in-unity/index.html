@@ -4,26 +4,7 @@ function fbShare(){
 	FB.login(function(response) {
 	   if (response.authResponse) {
 	     console.log('Logged in');
-	     	FB.ui(
-	     	  {
-	     	  	display: "iframe",
-	     	    method: 'feed',
-	     	    name: 'Creating an Isometric Camera in Unity',
-	     	    link: 'http://kraigwalker.com/articles/creating-an-isometric-camera-in-unity',
-	     	    picture: 'http://kraigwalker.com/images/newyork_isometric.jpg',
-	     	    
-	     	    description: 'Setting up orthographic projection in combination with camera rotation angles to create a functional isometric perspective with keyboard controls in Unity',
-	     	    actions: {"name":"", "link":""}
-	     	  },
-	     	  function(response) {
-	     	    if (response && response.post_id) {
-	     	      alert('Post was published.');
-	     	    } else {
-	     	      alert('Post was not published.');
-	     	    }
-	     	  }
-	     	);
-	     };
+
 	   } else {
 	     console.log('Not logged in to Facebook');
 	   }

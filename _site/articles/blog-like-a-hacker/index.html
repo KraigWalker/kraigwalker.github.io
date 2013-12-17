@@ -4,26 +4,7 @@ function fbShare(){
 	FB.login(function(response) {
 	   if (response.authResponse) {
 	     console.log('Logged in');
-	     	FB.ui(
-	     	  {
-	     	  	display: "iframe",
-	     	    method: 'feed',
-	     	    name: 'Blog Like A Hacker',
-	     	    link: 'http://kraigwalker.com/articles/blog-like-a-hacker',
-	     	    picture: 'http://kraigwalker.com/images/typewriter.jpg',
-	     	    
-	     	    description: 'Distilling the writing process to the bare essentials',
-	     	    actions: {"name":"", "link":""}
-	     	  },
-	     	  function(response) {
-	     	    if (response && response.post_id) {
-	     	      alert('Post was published.');
-	     	    } else {
-	     	      alert('Post was not published.');
-	     	    }
-	     	  }
-	     	);
-	     };
+
 	   } else {
 	     console.log('Not logged in to Facebook');
 	   }

@@ -4,26 +4,7 @@ function fbShare(){
 	FB.login(function(response) {
 	   if (response.authResponse) {
 	     console.log('Logged in');
-	     	FB.ui(
-	     	  {
-	     	  	display: "iframe",
-	     	    method: 'feed',
-	     	    name: 'An Idea: Pimp My Issue',
-	     	    link: 'http://kraigwalker.com/articles/an-idea-pimp-my-issue',
-	     	    picture: 'http://kraigwalker.com/images/pimpmyride.jpg',
-	     	    
-	     	    description: 'Creating a aid for developers that supports beatiful and meaningful issue tagging schemes.',
-	     	    actions: {"name":"", "link":""}
-	     	  },
-	     	  function(response) {
-	     	    if (response && response.post_id) {
-	     	      alert('Post was published.');
-	     	    } else {
-	     	      alert('Post was not published.');
-	     	    }
-	     	  }
-	     	);
-	     };
+
 	   } else {
 	     console.log('Not logged in to Facebook');
 	   }
