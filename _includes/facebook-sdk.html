@@ -34,12 +34,14 @@
 function fbShare(){
 	FB.ui(
 	  {
+	  	display: "iframe",
 	    method: 'feed',
 	    name: '{{ page.title }}',
 	    link: '{{ site.url }}{{ page.url }}',
 	    {% if page.image.feature %}picture: '{{ site.url }}/images/{{ page.image.feature }}',{% endif %}
 	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
-	    description: '{{ page.description }}'
+	    description: '{{ page.description }}',
+	    actions: {"name":"", "link":""}
 	  },
 	  function(response) {
 	    if (response && response.post_id) {
