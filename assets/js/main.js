@@ -61,7 +61,6 @@ appCache.update(); // Attempt to update the user's cache.
   })();
 }
 
-console.log("ready!");
 $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
@@ -69,6 +68,14 @@ $(document).ready(function() {
   $(".entry-readingtime").text(function (index, value) {
       return Math.round(parseFloat(value)) + " min";
     });
+  $(this).css('background-color', 'red');
+  window.addEventListener('devicelight', function(event) {
+    if (event.value < 50) {
+      $('body').css('background-color', '#ffeee3');
+    } else {
+      $('body').css('background-color', '#FFFFFF');
+    }
+  });
   });
 
 
