@@ -28,12 +28,7 @@ layout: none
     <uri>{{ site.url }}</uri>
     <email>{{ site.owner.email }}</email>
   </author>
-  <image>
-    <url>{{ post.image.feature }}</url>
-    <title>{{ post.title }}</title>
-    <link>{{ site.url}}{{ post.url }}</link>
-  </image>
-  <content type="html">{{ post.content | xml_escape }}
+  <content type="html">&lt;img src=&quot;http://kraigwalker.com/images/{{ post.image.feature | xml_escape }}&quot; alt=&quot;{{ post.title | xml_escape }}&quot; /&gt;{{ post.content | xml_escape }}
   &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ site.owner.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;</content>
 </entry>
 {% endfor %}
