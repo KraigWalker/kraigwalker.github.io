@@ -70,7 +70,7 @@ $(document).ready(function() {
     });
   $(this).css('background-color', 'red');
   window.addEventListener('devicelight', function(event) {
-    if (event.value < 50) {
+    if (event.value < 30) {
       $('body').css('background-color', '#ffeee3');
     } else {
       $('body').css('background-color', '#FFFFFF');
