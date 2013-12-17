@@ -45,7 +45,7 @@
           <div><a class="twitter-share-button"
             href="https://twitter.com/share"
             data-lang="en"
-            {% if page.tweet %}data-text="{{ page.tweet | cgi_escape }}%0D%0A"{% endif %}
+            {% if page.tweet %}data-text="{{ page.tweet | cgi_escape }}{% if page.twitpic %}{{ page.twitpic | prepend: ' ' | cgi_escape }}{% endif %}"{% endif %}
             {% if page.hashtag %}data-hashtags="{{ page.hashtag }}"{% endif %}
             data-via="Kraig_Walker"
             data-related="Kraig_Walker:Design and Code Converge,scottishgames:Scotland's Games Trade Body"
@@ -67,7 +67,7 @@
         data-calltoactionlabel="READ"
         data-calltoactionurl="http://kraigwalker.com{{ page.url }}">
         <i class="icon-google-plus"></i>Share</span>
-      <a class="btn twitter" href='https://twitter.com/share?url={{ canonical | bitly | cgi_escape }}&via=Kraig_Walker{% if page.tweet %}&text={{ page.tweet | cgi_escape }}%0D%0A{% endif %}&counturl={{ canonical | cgi_escape }}&related={{ "Kraig_Walker:Design and Code Converge,scottishgames:Scotlands Games Trade Body" | cgi_escape }}{% if page.hashtag %}&hashtags={{ page.hashtag | cgi_escape }}{% endif %}' target="_blank"><i class="icon-twitter"></i>Tweet</a>
+      <a class="btn twitter" href='https://twitter.com/share?url={{ canonical | bitly | cgi_escape }}&via=Kraig_Walker{% if page.tweet %}&text={{ page.tweet | cgi_escape }}{% if page.twitpic %}{{ page.twitpic | prepend: ' ' | cgi_escape }}{% endif %}{% endif %}&counturl={{ canonical | cgi_escape }}&related={{ "Kraig_Walker:Design and Code Converge,scottishgames:Scotlands Games Trade Body" | cgi_escape }}{% if page.hashtag %}&hashtags={{ page.hashtag | cgi_escape }}{% endif %}' target="_blank"><i class="icon-twitter"></i>Tweet</a>
       <a class="btn facebook" onclick="fbShare();"><i class="icon-facebook"></i>Share on Facebook</a>
       </div>
         {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
