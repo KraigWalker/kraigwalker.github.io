@@ -47,8 +47,7 @@ function fbShare(){
 	    link: '{{ site.url }}{{ page.url }}',
 	    {% if page.image.feature %}picture: '{{ site.url }}/images/{{ page.image.feature }}',{% endif %}
 	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
-	    description: '{{ page.description }}',
-	    actions: {"name":"", "link":"", "href": "{{ site.url }}{{ page.url }}", "text":"{{ page.title }}"}
+	    description: '{{ page.description }}'
 	  },
 	  function(response) {
 	    if (response && response.post_id) {
