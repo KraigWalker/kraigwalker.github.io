@@ -37,7 +37,7 @@ function fbShare(){
 	    method: 'feed',
 	    name: '{{ page.title }}',
 	    link: '{{ site.url }}{{ page.url }}',
-	    {% if page.image.feature %}picture: '{{ page.image.feature }}',{% endif %}
+	    {% if page.image.feature %}picture: '{{ siteurl }}/images{{ page.image.feature }}',{% endif %}
 	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
 	    description: '{{ page.description }}'
 	  },
