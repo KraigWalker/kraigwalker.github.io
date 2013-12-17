@@ -15,7 +15,8 @@
 {% if page.next %}<link rel="next" href="{{ site.url }}{{ page.next.url }}" />{% endif %}
 {% if page.previous %}<link rel="prev" href="{{ site.url }}{{ page.previous.url }}" />{% endif %}
 {% if page.layout == "post" %}{% if page.next %}<link rel="prerender" href="{{ site.url }}{{ page.next.url }}" />{% endif %}{% endif %}
-{% if page.layout == "post" %}{% if page.next %}<link rel="prerender" href="{{ site.url }}{{ page.next.url }}" />{% endif %}{% endif %}
+{% if page.layout == "post" %}{% if page.previous %}<link rel="prerender" href="{{ site.url }}{{ page.previous.url }}" />{% endif %}{% endif %}
+{% if page.url == "/" %}<link rel="next" href="{{ site.posts.first.url }}"/>{% endif%}
 {% if page.layout == "post" %}<link rel="prerender" href="{{ site.url }}" />{% endif %}
 <meta name="application-name" content="Kraig Walker"/>
 <meta name="msapplication-tooltip" content="Kraig Walker" />
