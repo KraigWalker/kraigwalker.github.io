@@ -28,9 +28,8 @@
 	     // Insert the Facebook JS SDK into the DOM
 	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 	 }
-	   }());
-</script>
-<script>
+}());
+
 function fbShare(){
 	var permissions = null; // stores the permissions the user has granted the app
 	if(!permissions || (permissons && !permissions.publish_actions)){
