@@ -26,7 +26,7 @@ var permissions = null; // stores the permissions the user has granted the app
 	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 	 }
 	}());
-
+	  console.log("subscribing permisions");
 	  // Auto login and permissions check
 	  FB.Event.subscribe('auth.statusChange', function(rsp){
 	  	console.log(rsp);
