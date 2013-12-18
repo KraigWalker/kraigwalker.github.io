@@ -42,6 +42,7 @@ function fbShare(){
 				},
 				function(response){
 					// handle the response
+					alert("action published with ID" + response.id);
 				});
 		} else {
 			FB.login(function(response) {
@@ -52,7 +53,11 @@ function fbShare(){
 			     	'post',
 			     	{
 			     		article: "{{ canonical }}"
-					}
+					},
+					function(response){
+						// handle the response
+						alert("action published with ID" + response.id);
+					});
 				);
 			 }
 			});

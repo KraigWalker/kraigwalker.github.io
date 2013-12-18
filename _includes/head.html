@@ -32,12 +32,12 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 {% if page.layout == 'page'%}
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-	<meta property="og:url" content="{{ canonical }}" />
 	<meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}" />
+	<meta property="og:url" content="{{ canonical }}" />
+	<meta property="og:site_name" content="Kraig Walker" />
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 {% elsif page.layout == 'post'%}
 	<meta property="og:type" content="og:article">
-	<meta property="fb:app_id" content="244539232310841">
 	<meta property="article:published_time" content="{{ page.date | date: "%B %d, %Y"}}" />
 	{%if page.published %}
 	<meta property="article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ page.date | date: "%B %d, %Y" }}{% endif %}" />
@@ -48,6 +48,7 @@
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 	<meta property="og:url" content="{{ canonical }}/">
 {% endif %}
+<meta property="fb:app_id" content="244539232310841">
 {% if page.image.feature %}<meta property="og:image" content="http://kraigwalker.com/images/{{ page.image.feature }}" />{% endif %}
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="fb:admins" content="1257181099" />
