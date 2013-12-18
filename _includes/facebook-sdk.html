@@ -47,7 +47,12 @@ function fbShare(){
 	    link: '{{ site.url }}{{ page.url }}',
 	    {% if page.image.feature %}picture: '{{ site.url }}/images/{{ page.image.feature }}',{% endif %}
 	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
-	    description: '{{ page.description }}'
+	    description: '{{ page.description }}',
+	    properties: {
+	    	"text": "read on Kraig Walker",
+	    	"href": "{{ canonical }}"
+	    },
+	    actions: {"name": "Read {% if page.og_type == 'tutorial' %}Tutorial{% else %}Article{% endif %}", "link":"{{ canonical }}"}
 	  },
 	  function(response) {
 	    if (response && response.post_id) {
