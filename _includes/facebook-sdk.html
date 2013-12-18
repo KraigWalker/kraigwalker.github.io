@@ -32,22 +32,28 @@
 </script>
 <script>
 function fbShare(){
-	FB.login(function(response) {
-	   if (response.authResponse) {
-	     console.log('Logged in');
-	     FB.api(
-	     	'me/news.reads',
-	     	'post',
-	     	{
-	     		article: "{{ canonical }}"
-	     	},
-	     	function(response){
-	     		// handle the response
-	     	});
-	   } else {
-	     console.log('Not logged in to Facebook');
-	   }
-	 });
+	FB.getLoginStatus(function(response) {
+		if(response.status === 'connected') {
+			FB.api(
+				'me/news.reads',
+				'post',
+				{
+					article: "{{ canonical }}"
+				},
+				function(response){
+					// handle the response
+				});
+		} else {
+			FB.login(function(response) {
+			   if (response.authResponse) {
+			     console.log('Logged in');
+			     FB.api(
+			     	'me/news.reads',
+			     	'post',
+			     	{
+			     		article: "{{ canonical }}"
+			     	},
+	});
 	/*FB.ui(
 	  {
 	  	display: "iframe",
