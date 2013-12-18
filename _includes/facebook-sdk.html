@@ -26,16 +26,4 @@ var permissions = null; // stores the permissions the user has granted the app
 	     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
 	 }
 	}());
-
-function fbShare(){
-		// all good, lets try an publish an action using the og:url tag as the object.url
-		FB.api('/me/news.reads', 'post', {
-			"article": "{{ canonical }}"
-		}, function(rsp){
-			console.log(rsp);
-			if(rsp.id) {
-				alert('action published with ID: ' + rsp.id);
-			}
-		});
-	};
 </script>
