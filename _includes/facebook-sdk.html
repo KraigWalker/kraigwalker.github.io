@@ -43,6 +43,7 @@ function fbShare(){
 				function(response){
 					// handle the response
 					alert("action published with ID" + response.id);
+					console.log(response);
 				});
 		} else {
 			FB.login(function(response) {
@@ -57,6 +58,7 @@ function fbShare(){
 					function(response){
 						// handle the response
 						alert("action published with ID" + response.id);
+						console.log(response);
 					});
 			 }
 			});
