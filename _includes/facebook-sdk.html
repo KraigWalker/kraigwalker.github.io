@@ -32,60 +32,26 @@
 </script>
 <script>
 function fbShare(){
-	FB.getLoginStatus(function(response) {
-		if(response.status === 'connected') {
-			FB.api(
-				'me/news.reads',
-				'post',
-				{
-					article: "{{ canonical }}"
-				},
-				function(response){
-					// handle the response
-					alert("action published with ID" + response.id);
-					console.log(response);
-				});
-		} else {
-			FB.login(function(response) {
-			   if (response.authResponse) {
-			     console.log('Logged in');
-			     FB.api(
-			     	'me/news.reads',
-			     	'post',
-			     	{
-			     		article: "{{ canonical }}"
-					},
-					function(response){
-						// handle the response
-						alert("action published with ID" + response.id);
-						console.log(response);
-					});
-			 }
-			});
-		}
-	});
-	/*FB.ui(
-	  {
-	  	display: "iframe",
-	    method: 'feed',
-	    name: '{{ page.title }}',
-	    link: '{{ site.url }}{{ page.url }}',
-	    {% if page.image.feature %}picture: '{{ site.url }}/images/{{ page.image.feature }}',{% endif %}
-	    {% if page.caption %}caption: '{{ page.caption }}',{% endif %}
-	    description: '{{ page.description }}',
-	    properties: {
-	    	"text": "read on Kraig Walker",
-	    	"href": "{{ canonical }}"
-	    },
-	    actions: {"name": "Read {% if page.og_type == 'tutorial' %}Tutorial{% else %}Article{% endif %}", "link":"{{ canonical }}"}
-	  },
-	  function(response) {
-	    if (response && response.post_id) {
-	      alert('Post was published.');
-	    } else {
-	      alert('Post was not published.');
-	    }
-	  }
-	);*/
+	var permissions = null; // stores the permissions the user has granted the app
+	if(!permissions || (permissons && !permissions.publish_actions)){
+		console.log("user needs to grant publish_actions permission, login or auth this app")
+		FB.login(function(rsp){
+			FB.api('/me/permissons', function(response){
+				console.log(response.data[0]);
+				permissions = response.data[0];
+			})
+			// could re-attempt to publish here, but won't for simplicity
+		},{socpe:'publish_actions'})
+	} else {
+		// all good, lets try an publish an action using the og:url tag as the object.url
+		FB.api('/me/news.reads', 'post', {
+			"article": "{{ canonical }}"
+		}, function(rsp){
+			console.log(rsp);
+			if(rsp.id) {
+				alert('action published with ID: ' + rsp.id);
+			}
+		})
+	}
 };
 </script>
