@@ -35,11 +35,20 @@ function fbShare(){
 	FB.login(function(response) {
 	   if (response.authResponse) {
 	     console.log('Logged in');
+	     FB.api(
+	     	'me/news.reads',
+	     	'post',
+	     	{
+	     		article: "{{ canonical }}"
+	     	},
+	     	function(response){
+	     		// handle the response
+	     	});
 	   } else {
 	     console.log('Not logged in to Facebook');
 	   }
 	 });
-	FB.ui(
+	/*FB.ui(
 	  {
 	  	display: "iframe",
 	    method: 'feed',
@@ -61,6 +70,6 @@ function fbShare(){
 	      alert('Post was not published.');
 	    }
 	  }
-	);
+	);*/
 };
 </script>
