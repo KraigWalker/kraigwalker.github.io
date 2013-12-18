@@ -27,34 +27,7 @@ var permissions = null; // stores the permissions the user has granted the app
 	 }
 	}());
 
-function fbShare(permissions){
-	console.log("subscribing permisions");
-	// Auto login and permissions check
-	FB.Event.subscribe('auth.statusChange', function(rsp){
-		console.log(rsp);
-		if(rsp.authResponse){
-			FB.api('/me/', function(me){
-				console.log(me);
-			});
-		// get the permission's the user has already granted
-			FB.api('/me/permissions', function(response){
-				if(response){
-					console.log(response.data[0]);
-					permissions = response.data[0];
-				}
-			})
-		}
-	})
-	if(!permissions || (permissons && !permissions.publish_actions)){
-		console.log("user needs to grant publish_actions permission, login or auth this app")
-		FB.login(function(rsp){
-			FB.api('/me/permissons', function(response){
-				console.log(response.data[0]);
-				permissions = response.data[0];
-			})
-			// could re-attempt to publish here, but won't for simplicity
-		},{socpe:'publish_actions'})
-	} else {
+function fbShare(){
 		// all good, lets try an publish an action using the og:url tag as the object.url
 		FB.api('/me/news.reads', 'post', {
 			"article": "{{ canonical }}"
@@ -63,7 +36,6 @@ function fbShare(permissions){
 			if(rsp.id) {
 				alert('action published with ID: ' + rsp.id);
 			}
-		})
-	}
-};
+		});
+	};
 </script>
