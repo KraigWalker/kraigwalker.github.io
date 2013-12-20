@@ -27,6 +27,12 @@ owner:
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/104694977517220407329
 
+utm:
+  tweet: "?utm_source=twitter&utm_medium=tweet&utm_campaign=Twitter"
+  fb_like: "?utm_source=fb_like&utm_medium=facebook&utm_campaign=Facebook"
+  fb_share: "?utm_source=fb_share&utm_medium=facebook&utm_campaign=Facebook"
+  gplus: "?utm_source=gplus&utm_medium=google_plus&utm_campaign=GooglePlus"
+
 bitly:
     username: o_182317e1t1
     api_key: R_40950921f9bb6e5c8cd610ed8bd49fda
