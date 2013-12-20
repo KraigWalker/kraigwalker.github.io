@@ -61,6 +61,12 @@ appCache.update(); // Attempt to update the user's cache.
   })();
 }
 
+(function() {
+  setTimeout(function() {
+    $("#loading").remove();
+  }, 4000);
+})();
+
 $(document).ready(function() {
   $(".navigation-wrapper .masthead #main .footer-wrapper").removeClass( "wf-loading" ).addClass( "wf-active" );
   $( "#loading").remove();
