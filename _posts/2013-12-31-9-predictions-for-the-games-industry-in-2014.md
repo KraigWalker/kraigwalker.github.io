@@ -34,7 +34,7 @@ Freemium isn’t going anywhere; but as mobile gamers become more demanding of t
 
 ##2. An “Arty” Game Could Beat A Triple-A Title On Launch Week Sales
 
-![Dear Esther](http://dear-esther.com/wp-content/uploads/2011/02/jakobson0052.jpg)
+![Dear Esther](http://img.gawkerassets.com/img/18j0vep19k3dnjpg/ku-xlarge.jpg)
 
 My money’s on the next Mike Bithell game personally. Charlie McDonell’s narrating it, which means lots of teenage girls and Doctor Who fans are already interested regardless of what they know about Thomas Was Alone. Triple-A games will try to fight back, Call of Duty might experiment with a gay romance scene inside an alternate reality 1980’s laser tank to attract a fresher fan base, much to the horror of the existing fan base who are still wondering whether the chick who just fragged them really does see their mother at pilates…
 
@@ -68,7 +68,7 @@ Again, I’ll be writing more about this sort of stuff in the new year.
 
 ##7. Mainstream Media Will Realise Games Are Cool
 
-![Serious Journalism](http://www.beyondhollywood.com/uploads/2012/03/Will-Ferrell-in-Anchorman-2004-Movie-Image.jpg)
+![Serious Journalism](https://lh5.googleusercontent.com/-AmPhytTSyuU/Urec1GkxplI/AAAAAAAAJWc/K6pgmsfJJXI/anchorman2.jpg)
 
 More of a dream than a prediction, I wish some day that the Guardian Games blog won’t have to pitch itself against the inexperienced columnist, looking to take a cheap, and reliable, shot at a medium they regularly don’t understand. The BBC News website will choose write about a game in it’s Entertainment section rather than tech, and more mainstream newspapers will wake up to the readership potential, and advertising potential that could come with having serious, hard working games writers in a dark corner of the office.
 
