@@ -54,15 +54,17 @@ Change always happens from the bottom up. It’ll start when Tesco start buildin
 
 ![You In?](http://www.telltalegames.com/pokernight2/resources/img/players.jpg)
 
-This is something which Steam employees have been speaking publicly about over the past year, but we haven’t really seen that come into full phase. More games will offer rewards over typical achievements, rewards that are only redeemable in other titles. This presents a big opportunity for large publishers with multiple franchises releasing at the same time, but it’s also an opportunity for indies to band together and make things more interesting. Imagine a DLC pack that isn’t unlocked by just buying it, no, you need to earn it in a completely different (but slightly related) game!
+This is something which Steam employees have been speaking publicly about over the past year, but we haven’t really seen that come into full phase. More games will offer rewards over typical achievements, rewards that are only redeemable in other titles. This presents a big opportunity for large publishers with multiple franchises releasing at the same time, but it’s also an opportunity for indies to band together and make things more interesting. Imagine a DLC pack that isn’t unlocked by just buying it, no, you need to *earn* it in a *completely different* (but slightly related) game!
 
-Not appealing? Then imagine a weapon skin that’s not just playable in DOTA 2, but also as a melee weapon in Sir You Are Being Hunted. Or as a tattoo for your player character in APB? That’s something that could really happen. It’s possible that it could happen today actually, but it’s really going to happen tomorrow. Just you watch.
+Not appealing? Then imagine a weapon skin that’s not just playable in **DOTA 2**, but also as a melee weapon in Sir You Are Being Hunted. Or as a tattoo for your player character in APB? That’s something that could really happen. It’s possible that it could happen today actually, but it’s really going to happen tomorrow. Just you watch.
 
 ##6. RSS Rises from the Dead
 
 ![Feedly - Google Reader's Attractive Little Sister](http://phandroid.s3.amazonaws.com/wp-content/uploads/2013/04/feedly-update-640x521.png)
 
-Why the hell is this relevant to game developers? Because the way people are finding out about your stuff is changing. Both developers and the games media alike will have to react to this, making their sites look good not just on Chrome, but on Feedly, Instapaper and Pocket. I’ve already taken steps to make sure my blog works good with these services, but then, I’m like that. Make your blog readable, and make sure there’s stuff worth reading on it. It will pay dividends in 6 months or less.
+Why the hell is this relevant to game developers? Because the way people are finding out about your stuff is changing. Both developers and the games media alike will have to react to this, making their sites look good not just on Chrome, but on Feedly, Instapaper and Pocket. I’ve already taken steps to make sure my blog works good with these services, but then, I’m like that.
+
+*Make your blog readable*, and make sure there’s stuff *worth reading* on it. It will pay dividends in 6 months or less.
 
 Again, I’ll be writing more about this sort of stuff in the new year.
 
@@ -88,4 +90,6 @@ New storefronts like Humble Bundle have championed cross platform from existence
 
 ![Serious Data Science In Action](http://farm9.staticflickr.com/8067/8231530613_fd7b278e74_b.jpg)
 
-This kind of circles back to how were all going to get good at publishing things. Being able to collect and listen to the right signals is an important skill in any business, and hiring a full time Data Analyst solidifies an intent on understanding your audience, or potential audience even better. Of course, many studios have been doing this for years — decades even. But with the tools and techniques being passed down and made more readily available to everyone, you’ll start finding it’s not just the thirty-man development team plotting pivot graphs and pie charts, but the kid in his bedroom as well…
+This kind of circles back to how were all going to get good at publishing things. Being able to collect and listen to the right signals is an important skill in any business, and hiring a full time Data Analyst solidifies an intent on understanding your audience, or potential audience even better.
+
+Of course, many studios have been doing this for years — decades even. But with the tools and techniques being passed down and made more readily available to everyone, you’ll start finding it’s not just the thirty-man development team plotting pivot graphs and pie charts, but the kid in his bedroom as well…
