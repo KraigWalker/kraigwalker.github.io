@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2013-12-20T22:43:06+00:00
+# rev 2013-12-31T14:58:54+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -27,6 +27,7 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /sitemap.xml
 /tags.html
 
+/articles/9-predictions-for-the-games-industry-in-2014/index.html
 /articles/creating-an-isometric-camera-in-unity/index.html
 /articles/an-idea-pimp-my-issue/index.html
 /articles/blog-like-a-hacker/index.html
