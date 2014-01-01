@@ -1,15 +1,12 @@
 ---
 layout: post
 title: "9 Predictions for the Games Industry in 2014"
-#
+
 # description - appears in meta description and open graph stuff
-#
 description: "I give my wildest guess to what will (and what I want to) happen to trends in the games industry in 2014."
-#
 # tweet - will appear prefilled in twitter share button
-#
 tweet: "9 Predictions for the Games Industry in 2014"
-hashtag: "gamesbiz2014"
+hashtag: "gamedev"
 googleplus: "*9 Predictions for the Games Industry in 2014* Episodic content, long form marketing, crappy smart TVs and more..."
 category: articles
 tags: [blog, games, new year, 2014, predictions, business, industry, marketing]
@@ -17,8 +14,8 @@ image:
   feature: spinning-top.jpg
   thumbnail: spinning-top_150.jpg
 comments: true
-primary: ""
-modified: 2013-12-31
+primary: "Kraig Walker"
+modified: "2013-12-31"
 #published: true
 ---
 

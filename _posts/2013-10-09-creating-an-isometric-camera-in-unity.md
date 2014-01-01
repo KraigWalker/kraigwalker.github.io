@@ -11,7 +11,7 @@ tweet: "Creating an Isometric Camera in Unity"
 hashtag: "Unity3d"
 comments: true
 primary: "Unity"
-modified: 2013-11-28
+modified: "2013-11-28"
 ---
 
 In addition to rendering a typical three-dimensional perspective, Unity also allows Cameras to use Orthographic projection instead, making it a fairly simple process to create your own isometric camera.
