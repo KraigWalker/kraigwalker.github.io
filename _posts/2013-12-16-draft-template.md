@@ -10,7 +10,7 @@ tweet: "Resolutions - Some things which will be in my 2014"
 # twitpic | if you've made a tweet with a twitter picture (upload from the UI)
 # 		  | make sure to paste the picture's url here to make shared tweets better
 #         | leave empty if there's no value
-twitpic:
+twitpic: "pic.twitter.com/S3f479RKYG"
 # hashtag | a popular viral hashtag or list of hashtags
 hashtag: "gamedev"
 # googleplus | appears in Google+ interactive post, use *text* for bold and _text_ for underline
