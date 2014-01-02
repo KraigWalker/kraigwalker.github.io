@@ -23,7 +23,7 @@ tags: [blog, kraig walker]
 # thumbnail should be 300px*300px
 image:
   feature: mountains-1.jpg
-  thumbnail: mountains-1.jpg
+  thumbnail: mountains-1_150.jpg
 comments: true
 # primary | a key word or subject area, as if you had to sort it into a subject folder
 #         | leave completely blank if you don't want this to be here and just the post title
@@ -36,7 +36,7 @@ published: true
 
 I'm starting with **[WeeWorld](http://weeworld.com)** next week doing QA, a world apart from the startups and indies I'm used to minglining with, but it's also exciting to work as a small part of a team that have command over hundreds of thousands of users every month.
 
-I also have a day in the week for personal project, which though I think in the early days will be dominated by learning the latest in web app testing; something that's always taken a bit of a back seat roll in the other teams I've worked at, as getting it out the door first was always top priority. If things improve that day will go back into working on my own games and experiments - primarily Game Dev City which currently exists as a crude serverside AI simulation.
+I also have a day in the week for personal project, which though I think in the early days will be dominated by learning the latest in web app testing; something that's always taken a bit of a back seat roll in the other teams I've worked at, as getting it out the door first was always top priority. If things improve that day will go back into working on my own games and experiments - primarily *Game Dev City* which currently exists as a crude server-side AI simulation.
 
 I'm also really interested in publishing solutions and have become increasingly aware of the importance of SEO in building this new-look website. I really love **[Jekyll](http://jekyllrb.com/)** - the static blogging tool I use that generates static html pages rather than using serverside templates to render them when requested. The benefit of this is faster, more efficient content delivery (and people can opt to have their site hosted for free on Github Pages)
 
