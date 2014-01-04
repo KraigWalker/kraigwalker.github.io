@@ -38,6 +38,6 @@ I love the aesthetic of Drive. It plays and feels like a short love story, inter
 
 I watched some interviews that were done around the time of the movies release. Ryan Gosling talks about the early days of production, when he would take long late night drives with director Nicolas Winding. Music blasted endlessly through the radio. "This is what this film should be about!" Gosling procclaimed, and shortly after, almost all of the "Driver's" dialog was cut, and the script we know today took form. Legendary.
 
-As a minor tribute to the film I've assembled a small collection of songs that are from the movie, with a few personal favourites on the same line scattered here and there.
-
 <iframe src="https://embed.spotify.com/?uri=spotify:user:giarknot:playlist:5OybpEuj4zwossi8GVe3xy" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+As a minor tribute to the film I've assembled a small collection of songs that are from the movie, with a few personal favourites on the same line scattered here and there.
