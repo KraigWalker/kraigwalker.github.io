@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2014-01-04T16:33:34+00:00
+# rev 2014-01-04T16:44:37+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -28,12 +28,19 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /tags.html
 
 /articles/the-importance-of-considered-outreach/index.html
+http://kraigwalker.com/images/shubaya_crowd.jpg
 /articles/google-added-user-experience-to-pagespeed-insights/index.html
+http://kraigwalker.com/images/speedometer.jpg
 /articles/resolutions/index.html
+http://kraigwalker.com/images/mountains-1.jpg
 /articles/9-predictions-for-the-games-industry-in-2014/index.html
+http://kraigwalker.com/images/spinning-top.jpg
 /articles/creating-an-isometric-camera-in-unity/index.html
+http://kraigwalker.com/images/newyork_isometric.jpg
 /articles/an-idea-pimp-my-issue/index.html
+http://kraigwalker.com/images/pimpmyride.jpg
 /articles/blog-like-a-hacker/index.html
+http://kraigwalker.com/images/typewriter.jpg
 
 # Post Images - Until there's an automated method, list manually
 
