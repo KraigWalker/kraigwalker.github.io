@@ -31,7 +31,7 @@ primary:
 # The last time you modified the post content use "quotes" format: "yyyy-mm-dd"
 modified: "2014-01-05"
 # set to true to pubish, simple!
-published: false
+published: true
 ---
 
 Today is kind of awkward. Tomorrow is my first day at **WeeWorld** as a junior QA person. Everyone agrees this is a good start for me, myself included. And while I anticipate it will be a noticeable jump upwards from the environment I’ve been used to for the past year (people!!!???) I’m really excited.
