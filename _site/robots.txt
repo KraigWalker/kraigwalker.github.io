@@ -1,0 +1,10 @@
+User-Agent: *
+Dissallow: offline.html
+Dissallow: 404.html
+DIssallow codekit-config.json
+Dissallow: Gemfile
+Dissallow: Gemfile.lock
+Dissallow: README.md
+Dissallow: README.txt
+Dissallow: CssMinify.yml
+Dissallow: LICENSE
