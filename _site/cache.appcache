@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# rev 2014-02-07T14:53:05+00:00
+# rev 2014-02-13T22:22:20+00:00
 
 CACHE:
 /assets/css/fonts.css
@@ -24,7 +24,7 @@ http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 /feed.xml
 /index.html
 /offline.html
-/search.json//search.json.html
+
 /sitemap.xml
 /tags.html
 
