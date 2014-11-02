@@ -2,6 +2,7 @@
 <title>{% if page.primary %}{{ page.primary }} &#8211; {% endif %}{% if page.layout != "page" %}{% if page.title %}{{ page.title }} &#8211; {% endif %}{% else %}{% if page.layout == "page" %}{% if page.alt_title %}{{ page.alt_title }}{% else %}{{ page.title }} &#8211; {{ site.title }}{% endif %}{% endif %}{% endif %}</title>
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 <link rel="canonical" href="{{ canonical }}{% if page.layout == "post" %}/{% endif %}">
+<link itemprop="sameAs" href="https://www.freebase.com/m/01264m08">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 {% if site.owner.twitter %}
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% endif %}">
