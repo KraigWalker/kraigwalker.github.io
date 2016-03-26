@@ -39,8 +39,8 @@ http://kraigwalker.com/images/{{ post.image.feature }}
 
 # 3rd party plugins - typically for social buttons
 https://platform.twitter.com/widgets.js
-http://go.disqus.com/count.js
-http://connect.facebook.net/en_US/all.js
+https://a.disquscdn.com/count.js
+https://connect.facebook.net/en_US/all.js
 
 NETWORK:
 *
