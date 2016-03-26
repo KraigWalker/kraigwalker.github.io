@@ -6,7 +6,7 @@ description:      Design And Code Converge
 logo:             site-logo.png
 disqus_shortname: kraigwalker
 #Comment out url when working locally to resolve base urls correctly
-url: http://kraigwalker.com
+url: http://kraigwalker.azurewebsites.net
 
 jekyll-press:
   exclude: ['cache.appcache','_site/cache.appcache', '_site/assets/css/inline_styles.css', '_site/assets/css/animate.css']
